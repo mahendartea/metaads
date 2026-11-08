@@ -15,6 +15,10 @@ Tersedia dalam **tiga format**:
 
 **Buka `index.html` di browser** — tanpa internet, build, atau server. Semua aset lokal.
 
+**Angka utama:** paket Agresif Rp 15,5–23 jt/bulan → 4–8 rb follower + 800–1.500
+leads/bulan. Base case 100–150 rb follower dalam 18 bulan; 1 juta adalah jalur
+stretch (36–42 bulan, atau Rp 50 jt+ media/bulan).
+
 ---
 
 ## Publikasi GitHub Pages
@@ -177,12 +181,16 @@ Semua angka audiens, biaya, dan konversi adalah **asumsi kerja** berbasis
 benchmark umum, bukan jaminan hasil:
 
 - Baseline 12.400 followers gabungan (perlu audit akun riil).
-- Biaya per follower berbayar Rp 2.000 (rentang Rp 1.200–3.500).
+- Paket Agresif: iklan Rp 10,5–15 jt + produksi Rp 5–8 jt = **Rp 15,5–23 jt/bulan**.
+- Biaya per follower Rp 1.000–4.000; CPL kampus Rp 10.000–60.000.
+- Split iklan: Instagram 50% · Facebook 35% · Threads 15%; WhatsApp organik.
+- Hasil wajar paket agresif: 4.000–8.000 follower + 800–1.500 leads per bulan.
 - 30% followers dari media berbayar, 70% organik.
-- Anggaran rekomendasi Rp 35 jt/bulan media + Rp 9 jt produksi + Rp 2 jt tools.
 
-Ganti dengan data aktual setelah 14 hari audit. Target 1 juta dalam 18 bulan
-adalah target agresif; deck juga menyiapkan skenario 24 bulan sebagai cadangan.
+Angka di atas mengacu pada `dari-meta.md` (benchmark Meta Ads Indonesia 2026).
+Target 1 juta dalam 18 bulan adalah **jalur stretch** — butuh 55.000
+follower/bulan atau 7–9× output paket agresif. Base case yang direkomendasikan:
+100.000–150.000 follower dalam 18 bulan, dengan 1 juta di bulan 36–42.
 
 ---
 

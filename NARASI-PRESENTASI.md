@@ -132,30 +132,29 @@ saya akan tampung di akhir agar alurnya tidak terputus.
 **Narasi:**
 
 Tiga angka. **Satu juta** audiens terafiliasi dalam 18 bulan. **Empat** platform
-Meta dalam satu portofolio. Dan **Rp 35 juta per bulan** untuk media berbayar
-sebagai rekomendasi.
+Meta dalam satu portofolio. Dan **Rp 15 juta per bulan** untuk media pada paket
+agresif.
 
-Cara kita mencapainya bukan dengan membeli follower. Kita memakai prinsip
-**70/30**: tujuh puluh persen pertumbuhan datang dari konten dan komunitas, tiga
-puluh persen dari iklan. Iklan itu akselerator, bukan pengganti. Konten yang
-lemah tidak akan diselamatkan oleh anggaran iklan sebesar apa pun.
+Tapi saya perlu jujur soal jalurnya. Dengan benchmark kampus, paket agresif
+Rp 15–23 juta per bulan menghasilkan sekitar **4–8 ribu follower baru per
+bulan**. Dalam 18 bulan, itu **100–150 ribu follower** — bukan satu juta.
 
-Kita juga akan memproduksi sekitar **120 konten per bulan** — empat konten per
-hari lintas platform, dengan 60 persen video pendek. Dan setiap kreatif diberi
-waktu 14 hari untuk membuktikan diri. Yang gagal dimatikan, yang menang
-digandakan.
+Untuk mencapai satu juta dalam 18 bulan, kita butuh **55 ribu follower per
+bulan**, sekitar **7–9 kali** output paket agresif. Itu hanya mungkin dengan
+media spend Rp 50 juta lebih per bulan, atau dengan ledakan konten viral yang
+tidak bisa dijamin. Jalur yang realistis adalah 36–42 bulan.
 
-Saya perlu menyampaikan satu hal dengan jelas: **target ini agresif**. Rencana
-ini mengejarnya lewat kurva bertahap, dan menyiapkan skenario 24 bulan bila
-realitas pasar menuntut. Saya tidak akan menjual mimpi bahwa semuanya akan mudah.
+Karena itu saya membawa dua jalur: **base case** yang bisa dieksekusi dengan
+anggaran wajar, dan **stretch** satu juta dalam 18 bulan yang harus disadari
+risikonya. Prinsip 70/30 tetap: tujuh puluh persen organik, tiga puluh persen
+berbayar, 120 konten per bulan, dan setiap kreatif diuji 14 hari.
 
 **Poin kunci:**
-- 1.000.000 audiens · 4 platform · Rp 35 jt media/bulan.
-- 70% organik, 30% berbayar; konten dulu, iklan mempercepat.
-- Target agresif, dengan skenario cadangan 24 bulan.
+- 1 juta/18 bulan adalah jalur stretch; base case 100–150 ribu.
+- Paket agresif Rp 15–23 juta/bulan → 4–8 ribu follower/bulan.
+- 1 juta butuh 7–9× output itu, atau 36–42 bulan.
 
-**Transisi:** “Sebelum membicarakan iklan, mari kita rapikan fondasinya.”
-
+**Transisi:** “Sebelum iklan, mari rapikan fondasinya.”
 ---
 
 ## 04 · Bab 01 — Fondasi
@@ -183,32 +182,32 @@ bocor di tempat yang tidak terlihat.
 
 **Narasi:**
 
-Kita punya empat permukaan, dan masing-masing punya pekerjaan yang berbeda.
+Kita punya empat permukaan, dan masing-masing punya pekerjaan berbeda.
 
-**Facebook** adalah kredibilitas dan jangkauan 25 ke atas. Di sini kita bicara
-kepada orang tua calon mahasiswa, alumni, dan komunitas yang lebih matang.
-Formatnya pengumuman resmi, live, album kegiatan, dan grup.
+**Facebook** adalah kredibilitas dan jangkauan 25 ke atas: orang tua, guru BK,
+alumni, dan masyarakat umum. Formatnya pengumuman resmi, live, album kegiatan,
+grup alumni, dan iklan PMB yang diarahkan ke orang tua.
 
 **Instagram** adalah mesin discovery. Reels menjadi etalase utama untuk audiens
-16–24 tahun. Carousel memberi kedalaman, story memberi keseharian. Kalau kita
-hanya boleh memilih satu platform untuk akuisisi, ini pilihannya.
+16–24 tahun. Carousel memberi kedalaman, story memberi keseharian. Ini platform
+utama untuk akuisisi follower.
 
-**Threads** adalah percakapan harian. Tempat opini, behind the scene, dan
-polling. Biaya produksinya rendah, tapi butuh konsistensi harian.
+**Threads** adalah percakapan harian. CPM-nya masih paling murah karena
+kompetitor iklan belum sebanyak IG dan FB, tetapi belum bisa menjadi mesin utama
+leads. Fungsinya branding dan percakapan.
 
-**WhatsApp Channel** adalah distribusi langsung. Bukan untuk viral, tapi untuk
+**WhatsApp Channel** adalah distribusi langsung. Bukan untuk viral, tetapi untuk
 pengumuman PMB, reminder beasiswa, dan retensi audiens yang sudah percaya.
 
 Aturan mainnya: satu identitas visual, satu nada bicara, empat format berbeda.
 Jangan copy-paste konten yang sama tanpa menyesuaikan konteks platform.
 
 **Poin kunci:**
-- FB: kredibilitas & 25+; IG: discovery & Reels.
-- Threads: percakapan; WA: retensi & konversi.
-- Satu suara, empat format berbeda.
+- FB: kredibilitas, orang tua, dan iklan PMB.
+- IG: discovery dan Reels; Threads: CPM murah, bukan mesin leads.
+- WA: retensi dan konversi.
 
-**Transisi:** “Empat platform ini harus duduk di bawah satu atap. Itulah yang saya maksud dengan arsitektur.”
-
+**Transisi:** “Empat platform ini harus duduk di bawah satu atap. Itulah arsitektur aset.”
 ---
 
 ## 06 · Arsitektur aset
@@ -458,25 +457,26 @@ jumlah event browser dan server setiap minggu.
 **Narasi:**
 
 Setiap tujuan punya pekerjaan. **Awareness** untuk kampanye kampus dan momen
-wisuda, diukur dengan reach dan CPM. **Engagement** untuk membangun social
-proof. **Traffic** untuk mengarahkan ke profil dan landing PMB. **Leads** untuk
-formulir dan webinar. **Conversions** untuk pendaftaran dan pembayaran.
+wisuda, dengan benchmark CPM **Rp 15–60 ribu**, rata-rata November 2026 sekitar
+**Rp 37 ribu**. **Engagement** untuk social proof. **Traffic** untuk mengarahkan
+ke profil dan landing PMB, dengan CPC **Rp 300–2.500**. **Leads** untuk formulir
+dan webinar, dengan CPL kampus **Rp 10–60 ribu**. **Conversions** untuk
+pendaftaran dan pembayaran.
 
 Struktur minimalnya: satu kampanye, dua sampai tiga ad set, tiga kreatif per ad
-set. Jangan membuat dua puluh ad set dengan satu kreatif — itu bukan pengujian,
-itu pemborosan.
+set. Jangan membuat dua puluh ad set dengan satu kreatif.
 
-Aturan belanja: 70 persen ke yang terbukti, 20 persen untuk scaling, 10 persen
-eksperimen. Yang dipantau: frekuensi di bawah 3, CPM stabil, CTR di atas 1
-persen, dan biaya per hasil turun dalam 14 hari.
+Soal belanja: minimum teknis Meta sekitar **Rp 16–25 ribu per hari**, tetapi itu
+terlalu kecil untuk keluar dari learning phase. Uji awal **Rp 50–150 ribu per
+hari**; untuk learning phase yang optimal sekitar **Rp 150 ribu per hari per ad
+set**. Aturan portofolio tetap 70/20/10.
 
 **Poin kunci:**
-- Tujuan menentukan optimasi dan metrik.
+- CPM Rp 15–60 rb; CPC Rp 300–2.500; CPL Rp 10–60 rb.
+- Minimum teknis Rp 16–25 rb/hari; efektif Rp 50–150 rb/hari.
 - 1 kampanye · 2–3 ad set · 3 kreatif.
-- 70/20/10 dan aturan kill/scale.
 
 **Transisi:** “Sebelum uang keluar, ada dua belas hal yang harus dicentang.”
-
 ---
 
 ## 15 · Checklist go-live
@@ -490,20 +490,19 @@ menyala, CAPI terdeduplikasi, pembayaran aktif, dua admin dengan 2FA, UTM
 konsisten, landing page cepat, tiga varian kreatif, caption dan subtitle sudah
 diperiksa, consent banner siap, dan dashboard pelaporan siap.
 
-Soal belanja: mulai Rp 150–300 ribu per hari per kampanye. Naikkan maksimal 20
-persen per tiga hari agar pembelajaran tidak ter-reset. Ganti kreatif saat
-frekuensi di atas 3 atau CTR turun 30 persen dalam tujuh hari.
+Soal belanja: minimum teknis Rp 16–25 ribu per hari, tetapi algoritma belum
+belajar. Tes awal Rp 50–150 ribu per hari. Untuk learning phase optimal, sekitar
+Rp 150 ribu per hari per ad set. Naikkan maksimal 20 persen per tiga hari.
 
-Dan eksperimen satu variabel dalam satu waktu. Kalau kita mengubah hook,
-audiens, dan format sekaligus, kita tidak akan tahu mana yang bekerja.
+Ganti kreatif saat frekuensi di atas 3 atau CTR turun 30 persen dalam tujuh
+hari. Dan uji satu variabel dalam satu waktu.
 
 **Poin kunci:**
 - 12 centang sebelum publish.
-- Mulai kecil, naik 20% per 3 hari.
-- Satu variabel per eksperimen.
+- Minimum teknis ≠ budget efektif.
+- Tes Rp 50–150 rb/hari; learning phase ± Rp 150 rb/hari per ad set.
 
 **Transisi:** “Fondasi dan iklan sudah. Sekarang bagian yang paling menentukan: konten.”
-
 ---
 
 ## 16 · Bab 03 — Konten & engagement
@@ -530,31 +529,26 @@ nyata mahasiswa akan dibagikan.
 
 **Narasi:**
 
-Lima pilar. **Kehidupan mahasiswa**, 30 persen: day in the life, UKM, kost,
-organisasi, drama tugas. Wajah manusia, bukan gedung.
+Lima pilar untuk membangun karakter UUI. **Kehidupan mahasiswa**, 30 persen:
+day in the life, UKM, kost, organisasi. **Bukti dan prestasi**, 20 persen:
+wisuda, prestasi, alumni, akreditasi. **Edukasi dan tips**, 20 persen: beasiswa,
+karier, literasi digital. **Aceh dan lokal**, 15 persen: budaya, kuliner,
+wisata. **Humor dan tren**, 15 persen: meme kampus, POV dosen, audio viral.
 
-**Bukti dan prestasi**, 20 persen: wisuda, prestasi, alumni sukses, akreditasi,
-kerja sama industri. Ini yang membangun kredibilitas.
+Proporsi umumnya 70 persen hiburan dan nilai, 30 persen bukti dan promosi.
 
-**Edukasi dan tips**, 20 persen: cara lolos seleksi, beasiswa, karier, AI untuk
-mahasiswa, literasi digital. Ini yang membuat orang menyimpan konten kita.
-
-**Aceh dan lokal**, 15 persen: budaya, kuliner, wisata, komunitas. Akar lokal
-adalah pembeda kita dari kampus lain.
-
-**Humor dan tren**, 15 persen: meme kampus, POV dosen, audio viral. Cepat
-diproduksi, tinggi jangkauan.
-
-Proporsinya 70 persen hiburan dan nilai, 30 persen bukti dan promosi. Jangan
-dibalik. Kalau feed kita hanya berisi brosur, tidak ada yang akan betah.
+Tapi saat musim PMB, Januari sampai Agustus, komposisinya bergeser: **70 persen
+konten untuk calon mahasiswa** — biaya kuliah, beasiswa, prospek kerja, tour
+kampus; **20 persen prestasi** mahasiswa dan dosen; **10 persen pengumuman
+resmi**. Ini yang membuat feed kita relevan bagi orang yang sedang memilih
+kampus.
 
 **Poin kunci:**
-- Lima pilar dengan proporsi 30/20/20/15/15.
-- 70% nilai, 30% promosi.
-- Setiap pilar punya format utamanya.
+- Lima pilar untuk karakter; 70/30 nilai vs promosi.
+- Mode PMB: 70% calon mahasiswa, 20% prestasi, 10% pengumuman.
+- Konten harus menjawab pertanyaan calon, bukan hanya membanggakan kampus.
 
 **Transisi:** “Pilar menentukan apa. Ritme menentukan kapan.”
-
 ---
 
 ## 18 · Ritme per platform
@@ -635,28 +629,23 @@ balik, bukan hanya “terima kasih”.
 **Komunitas**: grup WhatsApp atau Telegram per angkatan, dengan 20 ambassador
 mahasiswa yang menjawab pertanyaan calon.
 
-**UGC**: repost story mahasiswa setiap hari dan beri kredit. Audiens lebih
-percaya pada teman daripada brosur.
+**UGC**: repost story mahasiswa setiap hari dan beri kredit.
 
-**Kolaborasi**: dua collab post per minggu dengan UKM, alumni, kreator Aceh, dan
-bisnis lokal. Satu konten menjangkau dua audiens.
+**Kolaborasi**: dua collab post per minggu. Mulai dari Guru BK SMA, alumni, dan
+organisasi siswa. **Satu kolaborasi Reels dengan SMA bisa mendatangkan 200–500
+follower organik tanpa iklan.** Ini kanal yang paling efisien dan paling
+dipercaya.
 
-**Live**: satu kali per minggu. Q&A PMB, tur kampus, wawancara alumni.
+**Live**: satu kali per minggu untuk Q&A PMB, tur kampus, wawancara alumni.
 
-**Giveaway**: berbasis nilai, bukan “follow untuk menang”. Skema follow-only
-melanggar kebijakan dan menarik audiens palsu.
-
-Efek compounding-nya: balasan cepat menaikkan komentar, komentar menaikkan
-distribusi, distribusi menaikkan follower, dan follower menaikkan komentar
-berikutnya. Loop ini harus dijaga setiap hari.
+**Giveaway**: berbasis nilai, bukan “follow untuk menang”.
 
 **Poin kunci:**
-- Golden hour 30 menit.
-- Komunitas, UGC, kolaborasi, live.
-- Giveaway yang etis.
+- Golden hour 30 menit; komunitas dan UGC setiap hari.
+- Guru BK SMA: 200–500 follower organik per kolaborasi.
+- Giveaway yang etis, bukan follow-only.
 
 **Transisi:** “Semua ini masuk ke kalender mingguan.”
-
 ---
 
 ## 21 · Kalender mingguan
@@ -714,25 +703,21 @@ Dengan baseline 12.400 follower, kita butuh **987.600 follower baru** untuk
 mencapai satu juta. Dibagi 547 hari, itu sekitar **1.805 follower per hari**,
 atau **54.867 per bulan**.
 
-Angka ini bukan target harian yang datar. Pertumbuhan mengikuti kurva: lambat
-di awal, cepat saat mesin konten dan iklan matang.
+Tapi benchmark kampus memberi angka yang berbeda. Paket agresif Rp 15,5–23 juta
+per bulan menghasilkan **4–8 ribu follower per bulan**. Untuk mencapai 55 ribu
+per bulan, kita butuh **7–9 kali** output itu. Artinya: satu juta dalam 18 bulan
+adalah jalur stretch, bukan base case.
 
-Dari mana angka 12.400? Itu asumsi kerja. Di hari pertama, tim harus mengaudit
-keempat akun dan memasukkan angka riil. Kalau baseline-nya berbeda, seluruh
-proyeksi bergeser.
-
-Kalkulator di versi web bisa diubah langsung saat rapat. Versi PowerPoint
-menampilkan contoh perhitungan yang sama. Yang penting bukan angka di layar,
-tetapi logikanya: target besar harus diterjemahkan menjadi beban harian yang
-bisa dievaluasi.
+Karena itu, audit baseline di hari pertama sangat penting. Kalkulator di versi
+web bisa diubah langsung saat rapat. Angka 12.400 adalah asumsi; kalau baseline
+riil berbeda, seluruh proyeksi bergeser.
 
 **Poin kunci:**
 - 987.600 follower baru · 1.805/hari · 54.867/bulan.
-- Baseline 12.400 adalah asumsi.
-- Kurva, bukan garis datar.
+- Benchmark kampus: 4–8 ribu/bulan dengan paket agresif.
+- 1 juta/18 bulan = 7–9× output itu.
 
 **Transisi:** “Dari mana follower itu datang? Kita bagi per platform.”
-
 ---
 
 ## 24 · Alokasi per platform
@@ -741,27 +726,27 @@ bisa dievaluasi.
 
 **Narasi:**
 
-Kita tidak membagi rata. **Instagram 480 ribu** atau 48 persen, karena Reels
-menanggung sebagian besar akuisisi. **Facebook 250 ribu** atau 25 persen, untuk
-jangkauan 25 ke atas dan orang tua calon mahasiswa. **Threads 170 ribu** atau 17
-persen, karena biaya produksinya rendah dan distribusi percakapannya cepat.
-**WhatsApp 100 ribu** atau 10 persen, bukan untuk viral, tetapi untuk retensi
-dan konversi.
+Kita tidak membagi rata. Untuk belanja iklan: **Instagram 50 persen**,
+**Facebook 35 persen**, **Threads 15 persen**, dan **WhatsApp nol persen** karena
+dikelola organik.
 
-Totalnya tepat satu juta audiens terafiliasi.
+Dengan paket agresif Rp 10,5–15 juta per bulan, itu berarti Instagram sekitar
+Rp 5,3–7,5 juta, Facebook Rp 3,7–5,3 juta, dan Threads Rp 1,6–2,3 juta.
 
-Alokasi ini bisa berubah setelah 90 hari, tergantung data. Kalau Threads
-ternyata lebih efisien, kita geser anggaran. Kalau Instagram jenuh, kita
-perbesar Facebook. Yang tidak berubah adalah prinsipnya: setiap platform punya
-pekerjaan, bukan sekadar kehadiran.
+Alasannya: Instagram adalah mesin akuisisi. Facebook menjangkau orang tua, guru
+BK, dan alumni — pengambil keputusan biaya. Threads punya CPM paling murah,
+tetapi belum bisa menjadi mesin leads; fungsinya branding dan percakapan.
+WhatsApp menjaga retensi dan konversi.
+
+Target follower 18 bulan tetap ada sebagai jalur stretch: IG 480 ribu, FB 250
+ribu, Threads 170 ribu, WA 100 ribu. Alokasi ini dievaluasi setiap kuartal.
 
 **Poin kunci:**
-- IG 480 rb · FB 250 rb · Threads 170 rb · WA 100 rb.
-- Alokasi mengikuti peran, bukan selera.
-- Dievaluasi tiap kuartal.
+- Split iklan: IG 50%, FB 35%, Threads 15%, WA organik.
+- Instagram akuisisi; Facebook orang tua & alumni.
+- Threads murah tapi bukan mesin leads.
 
 **Transisi:** “Kalau kita plot ke waktu, bentuknya seperti ini.”
-
 ---
 
 ## 25 · Kurva pertumbuhan
@@ -770,28 +755,24 @@ pekerjaan, bukan sekadar kehadiran.
 
 **Narasi:**
 
-Tiga fase. **Bulan 1–6, fondasi**: dari 12 ribu ke 95 ribu. Fokus pada kualitas,
-SOP, dan menemukan tiga format pemenang. Di fase ini pertumbuhan terasa lambat.
-Itu normal.
+Kurva ini adalah **jalur stretch**: 12 ribu ke 95 ribu di bulan 6, 420 ribu di
+bulan 12, dan satu juta di bulan 18. Bentuknya makin curam di akhir karena
+compounding: audiens besar menghasilkan jangkauan besar, yang menghasilkan
+follower lebih banyak.
 
-**Bulan 7–12, akselerasi**: dari 95 ribu ke 420 ribu. Volume naik, kolaborasi
-mingguan, dan iklan mulai diskalakan.
+Tapi saya ulangi: ini jalur stretch. **Base case paket agresif** hanya
+menghasilkan 4–8 ribu follower per bulan. Dalam 18 bulan, itu **100–150 ribu**,
+dan satu juta baru tercapai di bulan **36–42**.
 
-**Bulan 13–18, skala**: dari 420 ribu ke satu juta. Loop viral, paid
-amplification, dan komunitas lintas kampus bekerja bersamaan.
-
-Perhatikan bahwa kurvanya makin curam di akhir. Itu bukan sulap. Itu hasil
-compounding: audiens yang lebih besar menghasilkan jangkauan yang lebih besar,
-yang menghasilkan follower lebih banyak. Tapi compounding hanya terjadi kalau
-fondasi di enam bulan pertama benar.
+Fondasi enam bulan pertama tetap sama: kualitas, SOP, dan menemukan tiga format
+pemenang. Tanpa fondasi itu, kurva stretch tidak akan pernah terjadi.
 
 **Poin kunci:**
-- 12 rb → 95 rb → 420 rb → 1 juta.
-- Lambat di awal, cepat di akhir.
-- Compounding butuh fondasi.
+- Kurva 1 juta = stretch; base case 100–150 ribu/18 bulan.
+- 1 juta realistis di bulan 36–42.
+- Fondasi 6 bulan pertama menentukan compounding.
 
 **Transisi:** “Berapa harga kurva ini?”
-
 ---
 
 ## 26 · Anggaran
@@ -800,33 +781,29 @@ fondasi di enam bulan pertama benar.
 
 **Narasi:**
 
-Tiga skenario. **Lean, Rp 15 juta per bulan**: total sekitar 535 ribu audiens
-dalam 18 bulan. Tidak cukup untuk mencapai target.
+Tiga paket kampus. **Hemat**: iklan Rp 75 ribu per hari, total Rp 3,75–5,25 juta
+per bulan, hasil wajar 500–1.200 follower dan 50–150 leads. **Standar**: iklan
+Rp 150–200 ribu per hari, total Rp 9–14 juta, hasil 1.500–3.500 follower dan
+200–500 leads.
 
-**Rekomendasi, Rp 35 juta media per bulan**: sekitar 315 ribu follower berbayar
-dan 700 ribu organik, total 1,02 juta. Ini skenario yang saya minta.
+**Agresif**: iklan Rp 350–500 ribu per hari, total **Rp 15,5–23 juta per bulan**,
+hasil **4–8 ribu follower dan 800–1.500 leads**. Ini yang saya rekomendasikan
+untuk musim PMB.
 
-**Agresif, Rp 60 juta per bulan**: 1,29 juta audiens, dengan buffer 30 persen.
+Di luar itu, fee agensi opsional Rp 350 ribu–2 juta per bulan. Biaya per follow
+Rp 1.000–4.000. CPL kampus Rp 10–60 ribu.
 
-Asumsinya biaya Rp 2.000 per follower berbayar, dengan rentang Rp 1.200–3.500.
-Angka ini diuji ulang setelah 30 hari.
-
-Total yang diminta bukan hanya media. Media Rp 35 juta, produksi Rp 9 juta,
-tools Rp 2 juta — sekitar **Rp 46 juta per bulan**, atau Rp 828 juta untuk 18
-bulan. Itu setara Rp 828 per audiens terafiliasi, dan sudah termasuk produksi
-konten.
-
-Saya tidak meminta persetujuan detail hari ini. Saya meminta persetujuan
-prinsip: apakah kita serius mengejar target ini dengan sumber daya yang
-sepadan?
+Dan jalur satu juta dalam 18 bulan? Itu butuh 55 ribu follower per bulan, 7–9
+kali output paket agresif. Realistisnya Rp 50 juta lebih media per bulan, atau
+perpanjang timeline ke 36–42 bulan. Saya tidak menyarankan kita menjanjikan
+angka yang tidak didukung anggaran.
 
 **Poin kunci:**
-- Lean tidak cukup; rekomendasi Rp 35 jt media.
-- Total Rp 46 jt/bulan termasuk produksi dan tools.
-- Rp 828 per audiens untuk 18 bulan.
+- Rekomendasi: Agresif Rp 15,5–23 juta/bulan → 4–8 ribu follower + 800–1.500 leads.
+- Split iklan IG 50%, FB 35%, Threads 15%.
+- 1 juta/18 bulan butuh Rp 50 juta+ media atau 36–42 bulan.
 
 **Transisi:** “Anggaran itu masuk ke funnel seperti ini.”
-
 ---
 
 ## 27 · Funnel & 70/20/10
@@ -835,26 +812,26 @@ sepadan?
 
 **Narasi:**
 
-Target bulan ke-12: **15 juta tayangan**, **450 ribu kunjungan profil**, **55
-ribu follower baru**, **30 ribu yang terlibat**, dan **6 ribu advokat**.
+Funnel di layar ini adalah **jalur stretch** bulan ke-12: 15 juta tayangan, 450
+ribu kunjungan profil, 55 ribu follower baru, 30 ribu terlibat, 6 ribu advokat.
 
-Konversinya: 3 persen dari tayangan menjadi kunjungan profil, 12 persen dari
-kunjungan menjadi follow, 55 persen terlibat, dan 20 persen menjadi advokat.
+Untuk base case paket agresif, hasil yang wajar adalah **4–8 ribu follower dan
+800–1.500 leads per bulan**, dengan CPL Rp 10–60 ribu. Funnel tetap bekerja,
+hanya skalanya lebih kecil.
 
-Ini bukan angka bulan pertama. Ini angka saat mesin sudah matang. Di bulan
-pertama, konversinya bisa jauh lebih rendah.
+Retargeting adalah kunci efisiensi: orang yang menonton 50 persen Reels PMB atau
+mengunjungi website PMB dikejar lagi dengan iklan testimoni alumni. Ini yang
+menurunkan CPL.
 
 Bauran belanjanya 70 persen organik dan 30 persen berbayar. Dari belanja
-berbayar: 70 persen ke format yang terbukti, 20 persen scaling, 10 persen
-eksperimen. Angka-angka ini diuji setiap minggu, bukan setiap tahun.
+berbayar: 70 persen ke yang terbukti, 20 persen scaling, 10 persen eksperimen.
 
 **Poin kunci:**
-- 15 jt tayangan → 450 rb profil → 55 rb follow.
-- Konversi 3% → 12% → 55% → 20%.
-- 70/20/10 pada belanja berbayar.
+- Funnel stretch: 15 jt → 450 rb → 55 rb → 30 rb → 6 rb.
+- Base case: 4–8 ribu follower + 800–1.500 leads/bulan.
+- Retargeting viewer 50% Reels / pengunjung situs menurunkan CPL.
 
 **Transisi:** “Setelah funnel berjalan, kita bangun loop yang bekerja tanpa henti.”
-
 ---
 
 ## 28 · Loop viral & kolaborasi
@@ -865,26 +842,23 @@ eksperimen. Angka-angka ini diuji setiap minggu, bukan setiap tahun.
 
 Lima loop. **Loop Reels**: tonton, bagikan, jangkauan baru, follower, lebih
 banyak yang menonton. **Loop kolaborasi**: satu collab post muncul di dua
-profil, audiens silang tanpa biaya iklan. **Loop komunitas**: WA Channel,
-pengumuman, mahasiswa bagikan, teman bergabung. **Loop kampus**: 50 mahasiswa
-kreator memproduksi konten harian dengan biaya rendah. **Loop offline**: event,
-liputan, konten, pendaftaran event berikutnya.
+profil. **Loop komunitas**: WA Channel, pengumuman, mahasiswa bagikan, teman
+bergabung. **Loop kampus**: 20 ambassador mahasiswa memproduksi konten harian.
+**Loop offline**: event, liputan, konten, pendaftaran event berikutnya.
 
-Yang paling murah dan paling berkelanjutan adalah loop kampus. Karena itu kita
-merekrut 50 kreator mahasiswa: dua konten per minggu, honor Rp 150 ribu per
-konten plus merchandise.
+Program ambassador: 20 mahasiswa, Rp 300–500 ribu per bulan, dua konten per
+minggu. Jauh lebih murah dari iklan dan jauh lebih dipercaya calon mahasiswa.
 
-Kita juga bekerja dengan 10 KOL Aceh dan 3 alumni nasional per kuartal, serta
-menyiapkan content sprint dua minggu sebelum momen besar seperti wisuda,
-orientasi, kompetisi, dan Ramadan.
+Kita juga bekerja dengan 10 KOL Aceh dan 3 alumni per kuartal, plus kolaborasi
+Guru BK SMA. Satu kolaborasi Reels dengan SMA bisa mendatangkan 200–500 follower
+organik.
 
 **Poin kunci:**
-- Lima loop: Reels, kolaborasi, komunitas, kampus, offline.
-- 50 kreator mahasiswa adalah mesin termurah.
-- Content sprint untuk momen besar.
+- Lima loop; loop kampus paling murah.
+- 20 ambassador, Rp 300–500 rb/bulan, 2 konten/minggu.
+- Guru BK SMA: 200–500 follower organik per kolaborasi.
 
 **Transisi:** “Dengan semua itu, bagaimana kita memastikan eksekusinya tidak berhenti di dokumen?”
-
 ---
 
 ## 29 · Bab 05 — Eksekusi
@@ -914,25 +888,24 @@ menentukan apakah rencana ini menjadi sistem atau sekadar dokumen.
 Portfolio dan ajukan verifikasi. Pasang Pixel, CAPI, UTM, dan dashboard. Kunci
 lima pilar dan template visual. Produksi batch 40 konten.
 
-**Hari 31–60, peluncuran.** Jalankan kampanye awareness dan traffic. Dua konten
-per hari, satu live per minggu. Terapkan SOP balas komentar di bawah 30 menit.
-Lakukan 10 kolaborasi pertama. Kirim laporan mingguan pertama.
+**Hari 31–60, peluncuran.** Jalankan kampanye **leads dan traffic** dengan tes
+Rp 50–150 ribu per hari. Dua konten per hari, satu live per minggu. SOP balas
+komentar di bawah 30 menit. Sepuluh kolaborasi pertama, termasuk Guru BK SMA.
 
-**Hari 61–90, optimasi.** Matikan kreatif yang biayanya di atas target.
-Scale pemenang 20 persen per tiga hari. Uji audiens dan penawaran baru. Rekrut
-50 kreator mahasiswa. Review kuartal dan susun rencana Q2.
+**Hari 61–90, optimasi.** Matikan kreatif yang biayanya di atas target. Scale
+pemenang 20 persen per tiga hari. Uji audiens dan penawaran baru. Rekrut 20
+ambassador. Review kuartal dan rencana Q2.
 
 Gerbang keputusan hari ke-90: bila pertumbuhan di bawah 8.000 follower per
-bulan, ubah hook dan penawaran — jangan menambah anggaran. Uang tidak
-memperbaiki pesan yang salah.
+bulan, ubah hook dan penawaran — jangan menambah anggaran. Delapan ribu adalah
+batas atas paket agresif; di bawah itu, pesannya yang perlu diperbaiki.
 
 **Poin kunci:**
 - 30 hari fondasi, 30 peluncuran, 30 optimasi.
+- Tes Rp 50–150 rb/hari; learning phase ± Rp 150 rb/hari per ad set.
 - Day-90 gate: 8.000 follower/bulan.
-- Perbaiki pesan sebelum menambah uang.
 
 **Transisi:** “Siapa yang mengerjakan semua ini?”
-
 ---
 
 ## 31 · Tim & peran
@@ -967,28 +940,26 @@ telinga di kampus — sumber cerita dan jawaban atas pertanyaan calon mahasiswa.
 
 **Narasi:**
 
-Delapan angka. Pertumbuhan bersih plus 55 ribu follower per bulan pada bulan
-ke-12. Reach bulanan 15 juta akun unik. Engagement rate minimal 6 persen per
-reach di Instagram. Simpan dan bagikan minimal 2 persen. Biaya per follower
-maksimal Rp 2.500. Waktu respons di bawah 30 menit. Sentimen positif minimal 85
-persen. Dan pendaftar dari sosial naik 20 persen per kuartal.
+Delapan angka. **Pertumbuhan bersih 4–8 ribu follower per bulan** pada paket
+agresif. **Reach 5–8 juta** akun unik. **Engagement rate minimal 6 persen**.
+**Simpan dan bagikan minimal 2 persen**. **Biaya per follower Rp 1.000–4.000**.
+**Waktu respons di bawah 30 menit**. **Sentimen positif minimal 85 persen**. Dan
+**800–1.500 leads PMB per bulan** dengan CPL Rp 10–60 ribu.
 
 Dashboard-nya satu halaman di Looker Studio: empat platform, data harian.
-Bukan laporan 30 halaman.
 
 Atribusi memakai UTM wajib: source, medium, campaign, content. Tanpa UTM,
 kontribusi sosial tidak terlihat di laporan pendaftaran.
 
-Dan definisi menang kita bukan follower terbanyak, tetapi audiens yang
-bertanya, mendaftar, dan merekomendasikan.
+Definisi menang kita bukan follower terbanyak, tetapi audiens yang bertanya,
+mendaftar, dan merekomendasikan.
 
 **Poin kunci:**
-- Delapan KPI, satu halaman.
-- UTM wajib untuk atribusi.
-- Menang = bertanya, mendaftar, merekomendasikan.
+- 4–8 ribu follower/bulan; 5–8 juta reach.
+- Biaya per follower Rp 1–4 ribu; 800–1.500 leads/bulan.
+- Satu halaman, UTM wajib.
 
 **Transisi:** “KPI hanya berguna kalau ada ritme untuk membacanya.”
-
 ---
 
 ## 33 · Ritme kerja
@@ -1033,31 +1004,31 @@ Enam risiko utama.
 **Akun iklan dibatasi.** Mitigasinya: verifikasi bisnis, dua admin, kreatif
 patuh kebijakan, dan tidak ada klaim berlebihan.
 
-**Follower palsu atau engagement dibeli.** Ini larangan total. Tidak ada bot,
-tidak ada giveaway follow-only. Kita audit kualitas audiens setiap bulan.
+**Follower palsu atau engagement dibeli.** Ini larangan total. Harga pasar
+Rp 70–100 ribu per 1.000 follower terlihat murah, tetapi engagement-nya anjlok,
+akun bisa kena shadowban, dan kredibilitas kampus rusak. Tidak ada calon
+mahasiswa yang mendaftar karena follower bot.
 
-**Kelelahan kreatif.** Bank 14 hari konten, tiga varian hook, rotasi format
-setiap dua minggu.
+**Kelelahan kreatif.** Bank 14 hari konten, tiga varian hook, rotasi format.
 
-**Krisis reputasi.** SOP eskalasi satu jam, satu juru bicara, dan tanggapan
-tertulis sebelum komentar dibuka.
+**Krisis reputasi.** SOP eskalasi satu jam, satu juru bicara, tanggapan tertulis
+sebelum komentar dibuka.
 
 **Anggaran tidak efisien.** Aturan kill/scale mingguan, frekuensi di bawah 3,
-dan biaya per follow menjadi KPI utama.
+biaya per follow jadi KPI utama.
 
 **Ketergantungan satu platform.** Diversifikasi ke WhatsApp Channel, email, dan
-situs. Bangun audiens yang bisa kita miliki.
+situs.
 
 Semua ini juga menyentuh **UU PDP**. Setiap pengumpulan data lewat form iklan
 wajib punya dasar hukum, consent, dan kebijakan privasi yang bisa diakses.
 
 **Poin kunci:**
 - Enam risiko, masing-masing punya penawar.
-- Larangan total untuk follower palsu.
+- Beli follower: murah di depan, mahal di reputasi.
 - UU PDP bukan urusan tim IT saja.
 
 **Transisi:** “Dari risiko, kita beralih ke prinsip tata kelola.”
-
 ---
 
 ## 35 · Tata kelola & kebijakan
@@ -1098,37 +1069,33 @@ resmi di bawah dua jam, lalu evaluasi.
 
 Lima keputusan.
 
-**Satu**, setujui anggaran Rp 46 juta per bulan: Rp 35 juta media, Rp 9 juta
-produksi, Rp 2 juta tools. Dievaluasi per kuartal.
+**Satu**, setujui **paket Agresif Rp 15,5–23 juta per bulan**: Rp 10,5–15 juta
+iklan dan Rp 5–8 juta produksi. Fee agensi opsional. Dievaluasi per kuartal.
 
 **Dua**, tunjuk satu pemilik akun — Social Media Lead dengan mandat lintas
-biro, bukan komite. Satu orang yang bisa mengambil keputusan cepat.
+biro, bukan komite.
 
 **Tiga**, lengkapi dokumen verifikasi dalam tujuh hari: NIB, akta, SK, dan bukti
 alamat.
 
-**Empat**, aktifkan studio konten: ruang, kamera, lampu, dan dua editor. Volume
-dimulai dari sini.
+**Empat**, aktifkan studio konten: ruang, kamera, lampu, dan dua editor.
 
-**Lima**, setujui target per kuartal: Q1 25 ribu, Q2 95 ribu, Q3 220 ribu, Q4
-420 ribu, Q5 680 ribu, Q6 satu juta.
+**Lima**, setujui **dua jalur target**. Base case 100–150 ribu follower dalam 18
+bulan. Stretch satu juta dalam 18 bulan hanya jika kita siap media Rp 50 juta
+lebih per bulan, atau memperpanjang timeline ke 36–42 bulan.
 
 Untuk tujuh hari ke depan: audit akun, buat portofolio, pasang pixel dan UTM,
-kunci pilar dan template, syuting 30 konten, dan jadwalkan review pertama
-Senin.
+kunci pilar dan template, syuting 30 konten, dan jadwalkan review pertama Senin.
 
-Saya ingin menutup dengan satu kalimat. Kita tidak mengejar angka. Kita
-membangun alasan bagi orang untuk mengikuti, mempercayai, dan memilih UUI.
-
-*[Berhenti, tatap pimpinan, tunggu respons.]*
+Kita tidak mengejar angka. Kita membangun alasan bagi orang untuk mengikuti,
+mempercayai, dan memilih UUI.
 
 **Poin kunci:**
-- Anggaran, pemilik akun, dokumen, studio, target kuartalan.
+- Agresif Rp 15,5–23 juta/bulan; dievaluasi per kuartal.
+- Dua jalur: base case 100–150 ribu; stretch 1 juta dengan Rp 50 juta+ atau 36–42 bulan.
 - Tujuh hari pertama sudah punya daftar kerja.
-- Yang diminta hari ini adalah keputusan prinsip.
 
 **Transisi:** “Lampiran ini untuk tim eksekusi — tidak perlu saya bacakan.”
-
 ---
 
 ## 37 · Lampiran — standar eksekusi
@@ -1175,10 +1142,11 @@ Kalau hanya 15 menit: slide 1, 3, 23, 26, 36.
 ## Delapan pertanyaan yang paling mungkin muncul
 
 **1. Apakah satu juta followers realistis dalam 18 bulan?**
-Agresif, tetapi bisa dikejar dengan kurva bertahap: 25 ribu di Q1, 95 ribu di
-Q2, 220 ribu di Q3, 420 ribu di Q4, 680 ribu di Q5, dan satu juta di Q6.
-Kuncinya bukan angka awal, tapi konsistensi dan compounding. Skenario 24 bulan
-tersedia bila pasar menuntut.
+Jujur: tidak dengan anggaran kampus standar. Paket agresif Rp 15,5–23 juta per
+bulan menghasilkan 4–8 ribu follower per bulan — sekitar 100–150 ribu dalam 18
+bulan. Satu juta baru realistis di bulan 36–42. Untuk mengejarnya dalam 18
+bulan, kita butuh 55 ribu follower per bulan, 7–9 kali output paket agresif,
+yang berarti media Rp 50 juta lebih per bulan dan risiko yang jauh lebih tinggi.
 
 **2. Kenapa harus beriklan kalau bisa organik?**
 Organik adalah mesin utama, 70 persen. Iklan 30 persen mempercepat distribusi
@@ -1186,8 +1154,10 @@ konten yang sudah terbukti dan menargetkan audiens yang tepat. Tanpa iklan,
 kurva terlalu lambat; tanpa organik, biaya terlalu tinggi.
 
 **3. Berapa total anggaran dan apa yang didapat?**
-Rp 46 juta per bulan, atau Rp 828 juta untuk 18 bulan, termasuk produksi dan
-tools. Setara Rp 828 per audiens terafiliasi. Media saja Rp 35 juta per bulan.
+Paket Agresif Rp 15,5–23 juta per bulan: iklan Rp 10,5–15 juta dan produksi
+Rp 5–8 juta. Hasil wajar 4–8 ribu follower baru dan 800–1.500 leads per bulan.
+Fee agensi opsional Rp 350 ribu–2 juta. Untuk jalur satu juta dalam 18 bulan,
+media spend perlu Rp 50 juta lebih per bulan.
 
 **4. Apa risiko terbesar?**
 Akun iklan dibatasi dan kualitas audiens buruk. Mitigasinya verifikasi bisnis,
@@ -1220,8 +1190,8 @@ penawaran harus diubah.
 - Jangan membaca tabel; tunjuk satu angka dan ceritakan artinya.
 - Saat membahas anggaran, berhenti dan minta perhatian penuh.
 - Akhiri dengan lima keputusan, bukan dengan “terima kasih” saja.
-- Bawa satu halaman ringkasan untuk pimpinan: 1 juta, 18 bulan, Rp 46 juta,
-  lima keputusan.
+- Bawa satu halaman ringkasan untuk pimpinan: 1 juta (stretch), base case
+  100–150 ribu, Rp 15,5–23 juta/bulan, lima keputusan.
 
 *Dokumen ini adalah naskah pembicara, bukan kontrak hasil. Semua angka perlu
 diverifikasi terhadap data aktual akun dan kondisi pasar.*

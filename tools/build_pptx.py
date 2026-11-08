@@ -371,11 +371,11 @@ card(s, 680, 216, 536, 382, radius=16)
 text(s, 704, 236, 460, 14, "HASIL YANG DIHARAPKAN", size=7, color=MUTED2,
      bold=True, spc=1.4)
 text(s, 704, 258, 488, 70,
-     "Satu rencana yang bisa langsung dieksekusi Senin depan: akun terverifikasi, mesin konten berjalan, iklan terukur, dan jalur jelas menuju 1 juta audiens.",
+     "Satu rencana yang bisa langsung dieksekusi Senin depan: akun terverifikasi, mesin konten berjalan, iklan terukur, dan jalur jelas menuju pertumbuhan yang terukur — dengan 1 juta sebagai horizon stretch.",
      size=9.2, color=MUTED, line_spacing=1.45)
 hline(s, 704, 340, 488, alpha=0.10)
 for i, (n, l) in enumerate([("10", "langkah pendaftaran"), ("120", "konten / bulan"),
-                            ("4", "platform terintegrasi"), ("18", "bulan menuju target")]):
+                            ("4", "platform terintegrasi"), ("18", "bulan · dua jalur")]):
     cx = 704 + (i % 2) * 248
     cy = 360 + (i // 2) * 92
     text(s, cx, cy, 180, 30, n, size=20, color=TEXT, bold=True)
@@ -394,9 +394,9 @@ header2(s, "Ringkasan eksekutif", [
     [("Ini sebuah sistem.", {"color": REDB})],
 ], tag="Pembuka")
 
-metrics = [("1.000.000", "AUDIENS TERAFILIASI\nDALAM 18 BULAN", REDB),
+metrics = [("1.000.000", "AUDIENS TERAFILIASI · STRETCH\nDALAM 18 BULAN", REDB),
            ("4", "PLATFORM META\nSATU PORTOFOLIO", BLUEB),
-           ("35jt", "MEDIA SPEND REKOMENDASI\nPER BULAN", TEXT)]
+           ("15jt", "MEDIA SPEND PAKET AGRESIF\nPER BULAN", TEXT)]
 for i, (n, l, c) in enumerate(metrics):
     x = 64 + i * 384
     if i:
@@ -428,8 +428,8 @@ for i, (badge, t, d) in enumerate(cards):
     text(s, x + 18, 444, 240, 86, d, size=7.8, color=MUTED, line_spacing=1.4)
 
 note(s, 64, 574, 1152,
-     [("Sikap yang diminta: ", {"bold": True, "color": TEXT}),
-      ("target 1 juta dalam 18 bulan adalah target agresif. Rencana ini mengejarnya lewat kurva bertahap, bukan lonjakan tunggal — dan menyiapkan skenario 24 bulan bila realitas pasar menuntut.", {})],
+     [("Dua jalur: ", {"bold": True, "color": TEXT}),
+      ("paket agresif Rp 15–23 jt/bulan → 4–8 rb follower/bulan. Stretch 1 juta/18 bulan = 55 rb/bulan, atau 36–42 bulan.", {})],
      h=48)
 footer(s, 3)
 
@@ -459,9 +459,9 @@ header2(s, "Ekosistem", [
     lede="Setiap platform punya pekerjaan yang berbeda. Memperlakukan semuanya sama adalah cara tercepat untuk tidak unggul di mana pun.")
 
 platforms = [
-    ("fb", "Facebook Page", "Kredibilitas & jangkauan 25+.", "Pengumuman resmi, live, album kegiatan, dan grup alumni/orang tua.", "KPI: reach · share · klik", "blue"),
+    ("fb", "Facebook Page", "Kredibilitas & jangkauan 25+.", "Pengumuman resmi, live, album kegiatan, grup alumni/orang tua, dan iklan PMB ke orang tua.", "KPI: reach · share · klik", "blue"),
     ("ig", "Instagram", "Mesin discovery.", "Reels adalah etalase utama untuk audiens 16–24; carousel untuk kedalaman; story untuk keseharian.", "KPI: reach · save · follow", "red"),
-    ("th", "Threads", "Percakapan harian.", "Tempat opini, behind the scene, dan polling. Murah diproduksi, cepat menyebar.", "KPI: reply · repost · mention", "plain"),
+    ("th", "Threads", "Percakapan harian.", "Tempat opini, behind the scene, dan polling. CPM masih paling murah; belum mesin utama leads.", "KPI: reply · repost · mention", "plain"),
     ("wa", "WhatsApp Channel", "Distribusi langsung.", "Pengumuman PMB, reminder beasiswa, dan retensi audiens yang sudah percaya.", "KPI: view · CTR · unsubscribe", "plain"),
 ]
 for i, (ic, t, strong, d, kpi, tone) in enumerate(platforms):
@@ -849,10 +849,10 @@ header2(s, "Kampanye", [
 ], tag="Bab 02 · Meta Ads")
 
 rows = [
-    ["Awareness", "Kampanye kampus, Reels, momen wisuda", "Reach / video views", "CPM Rp 15–30 rb"],
+    ["Awareness", "Kampanye kampus, Reels, momen wisuda", "Reach / video views", "CPM Rp 15–60 rb (avg 37 rb)"],
     ["Engagement", "Membangun social proof & percakapan", "Post engagement", "Rp 1.500–3.500 / interaksi"],
-    ["Traffic", "Mengarahkan ke profil & landing PMB", "Link clicks / profile visits", "Rp 800–2.500 / klik"],
-    ["Leads", "Formulir PMB, unduh brosur, webinar", "Lead", "Rp 15–45 rb / lead"],
+    ["Traffic", "Mengarahkan ke profil & landing PMB", "Link clicks / profile visits", "Rp 300–2.500 / klik"],
+    ["Leads", "Formulir PMB, unduh brosur, webinar", "Lead", "Rp 10–60 rb / lead"],
     ["Conversions", "Pendaftaran & pembayaran", "Event konversi", "Biaya per pendaftar"],
 ]
 shape(s, 64, 218, 1152, 268, bg=WHITE, bg_alpha=0.02, border=WHITE,
@@ -863,7 +863,7 @@ table(s, 88, 232, 1104,
 
 cards = [
     ("Struktur minimal", "1 kampanye · 2–3 ad set (audiens) · 3 kreatif per ad set. Jangan 20 ad set dengan 1 kreatif."),
-    ("Aturan belanja", "70% ke yang terbukti · 20% untuk scaling · 10% eksperimen format baru."),
+    ("Aturan belanja", "70/20/10. Minimum teknis Rp 16–25 rb/hari; uji Rp 50–150 rb/hari; learning phase ± Rp 150 rb/hari per ad set."),
     ("Yang dipantau", "Frekuensi < 3, CPM stabil, CTR > 1%, dan biaya per hasil turun dalam 14 hari."),
 ]
 for i, (h, d) in enumerate(cards):
@@ -896,7 +896,7 @@ for c, items in enumerate(cols):
         text(s, x + 26, y, 340, 24, it, size=8.4, color=MUTED, line_spacing=1.25)
 
 cards = [
-    ("Batas aman", "Mulai Rp 150–300 rb/hari per kampanye. Naikkan maksimal 20% per 3 hari agar pembelajaran tidak ter-reset.", "red"),
+    ("Batas aman", "Minimum teknis Rp 16–25 rb/hari, tetapi algoritma belum belajar. Tes awal Rp 50–150 rb/hari; learning phase optimal ± Rp 150 rb/hari per ad set. Naikkan maksimal 20% per 3 hari.", "red"),
     ("Frekuensi", "Ganti kreatif saat frekuensi > 3 atau CTR turun 30% dalam 7 hari. Kelelahan kreatif adalah pemborosan paling umum.", "plain"),
     ("Eksperimen", "Satu variabel per uji: hook, audiens, atau format. Lebih dari satu variabel membuat hasil tidak bisa dibaca.", "plain"),
 ]
@@ -965,6 +965,12 @@ text(s, 656, 457, 544, 18,
      [("30% bukti & promosi", {"bold": True, "color": TEXT}),
       (" — alasan orang mau mendaftar. Jangan dibalik.", {})],
      size=8.2, color=MUTED)
+shape(s, 64, 496, 1152, 40, bg=BLUE, bg_alpha=0.06, border=BLUEB,
+      border_alpha=0.20, radius=8)
+text(s, 80, 507, 1108, 18,
+     [("Mode PMB (Jan–Agu): ", {"bold": True, "color": TEXT}),
+      ("70% konten calon mahasiswa (biaya kuliah, beasiswa, prospek kerja, tour kampus) · 20% prestasi · 10% pengumuman resmi.", {})],
+     size=8.0, color=MUTED)
 footer(s, 17)
 
 
@@ -1080,7 +1086,7 @@ eng = [
     ("00–30 mnt", "Golden hour", "Balas setiap komentar dalam 30 menit pertama. Ajukan pertanyaan balik, bukan hanya “terima kasih”.", "red"),
     ("Komunitas", "Grup per angkatan", "WhatsApp/Telegram per angkatan dan program studi. 20 ambassador mahasiswa menjawab pertanyaan calon.", "blue"),
     ("UGC", "Kampus dalam lensa", "Repost story mahasiswa tiap hari. Beri kredit. Audiens lebih percaya pada teman daripada brosur.", "green"),
-    ("Kolaborasi", "2 collab post/minggu", "UKM, alumni, kreator Aceh, bisnis lokal. Satu konten menjangkau dua audiens sekaligus.", "amber"),
+    ("Kolaborasi", "2 collab post/minggu", "Guru BK SMA, alumni, organisasi siswa. Satu collab Reels dengan SMA bisa mendatangkan 200–500 follower organik.", "amber"),
     ("Live", "Satu live per minggu", "Q&A PMB, tur kampus, wawancara alumni. Live membangun kedekatan yang tidak bisa ditiru carousel.", "plain"),
     ("Giveaway", "Hadiah berbasis nilai", "Bootcamp, beasiswa mini, merchandise. Hindari skema “follow untuk menang” — melanggar kebijakan dan menarik audiens palsu.", "plain"),
 ]
@@ -1190,8 +1196,8 @@ text(s, 64, 330, 540, 52,
      size=7.4, color=MUTED, line_spacing=1.45)
 note(s, 64, 398, 540,
      [("Baseline 12.400 adalah asumsi. ", {"bold": True, "color": TEXT}),
-      ("Audit akun di hari pertama dan masukkan angka riil ke kalkulator versi web.", {})],
-     h=64)
+      ("Benchmark kampus: paket agresif Rp 15,5–23 jt/bulan → 4–8 rb follower/bulan. 1 juta/18 bulan = 55 rb/bulan (7–9×). Audit akun di hari pertama.", {})],
+     h=74)
 
 shape(s, 660, 205, 556, 250, bg=WHITE, bg_alpha=0.04, border=WHITE,
       border_alpha=0.10, radius=14)
@@ -1225,42 +1231,45 @@ footer(s, 23)
 # ============================================================ 24 ALLOCATION
 s = new_slide()
 header2(s, "Alokasi", [
-    [("Membagi 1 juta ", {}), ("sesuai pekerjaan tiap platform.", {"color": BLUEB})],
+    [("Membagi anggaran ", {}), ("sesuai pekerjaan tiap platform.", {"color": BLUEB})],
 ], tag="Bab 04 · 1 Juta")
 
-bars = [("Instagram", "480 rb", 48, 0.48, REDB, RED),
-        ("Facebook", "250 rb", 25, 0.25, BLUEB, BLUE),
-        ("Threads", "170 rb", 17, 0.17, RGBColor(0xB0, 0x8C, 0xFF), RGBColor(0x6B, 0x4B, 0xFF)),
-        ("WhatsApp", "100 rb", 10, 0.10, GREEN, RGBColor(0x12, 0xA1, 0x50))]
+bars = [("Instagram", "50% · Rp 5,3–7,5 jt", 0.50, REDB),
+        ("Facebook", "35% · Rp 3,7–5,3 jt", 0.35, BLUEB),
+        ("Threads", "15% · Rp 1,6–2,3 jt", 0.15, RGBColor(0xB0, 0x8C, 0xFF)),
+        ("WhatsApp", "0% · organik", 0.0, GREEN)]
 y = 250
-for name, val, pct, ratio, c1, c2 in bars:
+for name, val, ratio, c1 in bars:
     shape(s, 64, y + 9, 9, 9, bg=c1, radius=2)
-    text(s, 82, y + 4, 120, 16, name, size=8.2, color=TEXT, bold=True)
-    shape(s, 200, y + 7, 380, 10, bg=WHITE, bg_alpha=0.07, border=None, radius=5)
-    shape(s, 200, y + 7, max(10, 380 * ratio), 10, bg=c1, border=None, radius=5)
-    text(s, 590, y + 3, 110, 16, f"{val}  ·  {pct}%", size=8.2, color=TEXT, bold=True)
+    text(s, 82, y + 4, 110, 16, name, size=8.2, color=TEXT, bold=True)
+    shape(s, 195, y + 7, 360, 10, bg=WHITE, bg_alpha=0.07, border=None, radius=5)
+    if ratio > 0:
+        shape(s, 195, y + 7, 360 * ratio, 10, bg=c1, border=None, radius=5)
+    text(s, 570, y + 3, 120, 16, val, size=8.0, color=TEXT, bold=True)
     y += 42
 
 hline(s, 64, 432, 620, alpha=0.10)
-for i, (n, l) in enumerate([("1.000.000", "Total audiens terafiliasi"),
-                            ("4 platform", "Satu portofolio Meta"),
+for i, (n, l) in enumerate([("Rp 15 jt", "Media / bulan · paket agresif"),
+                            ("3 + 1", "Platform berbayar + organik"),
                             ("18 bulan", "6 kuartal pertumbuhan")]):
     x = 64 + i * 206
     text(s, x, 450, 200, 24, n, size=14, color=TEXT, bold=True)
-    text(s, x, 474, 200, 16, l, size=6.8, color=MUTED2)
+    text(s, x, 474, 200, 16, l, size=6.6, color=MUTED2)
+text(s, 64, 498, 620, 16, "Target follower 18 bulan (stretch): IG 480 rb · FB 250 rb · Threads 170 rb · WA 100 rb.",
+     size=6.6, color=MUTED2)
 
 cards = [
-    ("INSTAGRAM · 480 RB", "Mesin akuisisi utama. Reels menanggung 70% follower baru; carousel mengubah penonton menjadi pendaftar.", REDB),
-    ("FACEBOOK · 250 RB", "Jangkauan 25+ dan orang tua calon mahasiswa. Reels lintas-posting menambah reach murah.", BLUEB),
-    ("THREADS · 170 RB", "Pertumbuhan cepat karena biaya produksi rendah dan distribusi percakapan. Kunci: konsisten harian.", RGBColor(0xC3, 0xAA, 0xFF)),
-    ("WHATSAPP · 100 RB", "Bukan untuk viral, tetapi untuk retensi dan konversi. Channel yang aktif mencegah kehilangan audiens.", RGBColor(0x8F, 0xF0, 0xB5)),
+    ("INSTAGRAM · 50%", "Mesin akuisisi utama. Reels menanggung mayoritas follower baru; carousel mengubah penonton menjadi pendaftar.", REDB),
+    ("FACEBOOK · 35%", "Jangkauan orang tua, guru BK, dan alumni. Iklan PMB diarahkan ke orang tua dan grup alumni.", BLUEB),
+    ("THREADS · 15%", "CPM masih paling murah, tetapi belum mesin leads. Fokus branding dan percakapan.", RGBColor(0xC3, 0xAA, 0xFF)),
+    ("WHATSAPP · 0% IKLAN", "Retensi dan konversi lewat kanal organik. Channel aktif mencegah kehilangan audiens.", RGBColor(0x8F, 0xF0, 0xB5)),
 ]
 y = 226
 for h, d, c in cards:
     shape(s, 720, y, 496, 84, bg=WHITE, bg_alpha=0.03, border=WHITE,
           border_alpha=0.09, radius=10)
     text(s, 738, y + 12, 450, 12, h, size=6.4, color=c, bold=True, spc=1.0)
-    text(s, 738, y + 29, 460, 46, d, size=7.4, color=MUTED, line_spacing=1.36)
+    text(s, 738, y + 29, 460, 48, d, size=7.4, color=MUTED, line_spacing=1.36)
     y += 92
 footer(s, 24)
 
@@ -1363,42 +1372,49 @@ for i, (tag, t, d, tone) in enumerate(phases):
     pill(s, x + 14, 490, 62, 18, tag, color=col, border=col, alpha=0.25, size=5.8)
     text(s, x + 14, 514, 240, 14, t, size=8.6, color=TEXT, bold=True)
     text(s, x + 14, 532, 344, 38, d, size=7.0, color=MUTED, line_spacing=1.35)
+note(s, 64, 590, 1152,
+     [("Kurva 1 juta = jalur stretch. ", {"bold": True, "color": TEXT}),
+      ("Base case paket agresif: 4–8 rb/bulan → 100–150 rb dalam 18 bulan.", {})],
+     h=40)
 footer(s, 25)
 
 
 # ============================================================ 26 BUDGET
 s = new_slide()
 header2(s, "Anggaran", [
-    [("Berapa harga ", {}), ("1 juta audiens?", {"color": REDB})],
+    [("Berapa harga ", {}), ("pertumbuhan yang wajar?", {"color": REDB})],
 ], tag="Bab 04 · 1 Juta")
 
-shape(s, 64, 212, 1152, 184, bg=WHITE, bg_alpha=0.02, border=WHITE,
+shape(s, 64, 205, 1152, 188, bg=WHITE, bg_alpha=0.02, border=WHITE,
       border_alpha=0.09, radius=14)
 rows = [
-    ["Lean", "Rp 15 jt", "135 rb", "400 rb", "535 rb", ("Tidak cukup", MUTED2)],
-    ["Rekomendasi", "Rp 35 jt", "315 rb", "700 rb", "1,02 jt", ("Target tercapai", GREEN)],
-    ["Agresif", "Rp 60 jt", "540 rb", "750 rb", "1,29 jt", ("Buffer 30%", BLUEB)],
+    ["Hemat", "Rp 75 rb", "Rp 2,25 jt", "Rp 1,5–3 jt", "Rp 3,75–5,25 jt", "500–1.200 follower · 50–150 leads"],
+    ["Standar", "Rp 150–200 rb", "Rp 4,5–6 jt", "Rp 3–5 jt", "Rp 9–14 jt", "1.500–3.500 · 200–500 leads"],
+    ["Agresif", "Rp 350–500 rb", "Rp 10,5–15 jt", "Rp 5–8 jt", "Rp 15,5–23 jt", "4.000–8.000 · 800–1.500 leads"],
 ]
-table(s, 88, 224, 1104,
-      ["Skenario", "Media / bulan", "Follower berbayar", "Follower organik", "Total 18 bulan", "Status"],
-      rows, [170, 150, 180, 180, 160, 264], row_h=44, header_h=28, hl=1, size=8.2)
+table(s, 88, 217, 1104,
+      ["Paket", "Iklan / hari", "Iklan / bulan", "Produksi", "Total / bulan", "Hasil wajar"],
+      rows, [150, 150, 160, 150, 160, 334], row_h=52, header_h=28, hl=2, size=8.0)
 
 cards = [
-    ("ASUMSI BIAYA", "Rp 2.000 per follower berbayar (rentang Rp 1.200–3.500). Diuji ulang setelah 30 hari."),
-    ("MEDIA", "Rp 35 jt/bulan untuk akuisisi, retargeting, dan pengujian kreatif."),
-    ("PRODUKSI", "Rp 9 jt/bulan: editor, properti, transport, honor kreator mahasiswa."),
-    ("TOOLS", "Rp 2 jt/bulan: penjadwalan, analitik, aset stok, penyimpanan."),
+    ("REKOMENDASI", "Paket Agresif Rp 15,5–23 jt/bulan: 4–8 rb follower + 800–1.500 leads per bulan.", True),
+    ("SPLIT IKLAN", "Instagram 50% · Facebook 35% · Threads 15%. WhatsApp organik, tanpa belanja iklan.", False),
+    ("OPSIONAL", "Fee agensi Rp 350 rb–2 jt/bulan. Biaya per follow Rp 1.000–4.000.", False),
 ]
-for i, (h, d) in enumerate(cards):
-    x = 64 + i * 292
-    shape(s, x, 412, 276, 96, bg=WHITE, bg_alpha=0.025, border=WHITE,
-          border_alpha=0.08, radius=10)
-    text(s, x + 14, 424, 240, 12, h, size=6.2, color=MUTED2, bold=True, spc=1.1)
-    text(s, x + 14, 442, 248, 58, d, size=7.6, color=MUTED, line_spacing=1.35)
+for i, (h, d, red) in enumerate(cards):
+    x = 64 + i * 390
+    shape(s, x, 410, 372, 94, bg=RED if red else WHITE,
+          bg_alpha=0.11 if red else 0.025,
+          border=REDB if red else WHITE,
+          border_alpha=0.28 if red else 0.08, radius=10)
+    text(s, x + 16, 424, 330, 12, h, size=6.2,
+         color=RGBColor(0xFF, 0xB3, 0xBA) if red else MUTED2, bold=True, spc=1.1)
+    text(s, x + 16, 442, 340, 54, d, size=7.8,
+         color=RGBColor(0xF0, 0xD4, 0xD8) if red else MUTED, line_spacing=1.35)
 
-note(s, 64, 526, 1152,
-     [("Total yang diminta: ", {"bold": True, "color": TEXT}),
-      (" ± Rp 46 jt/bulan (Rp 828 jt untuk 18 bulan). Itu setara Rp 828 per audiens terafiliasi untuk 18 bulan — dan sudah termasuk produksi konten.", {})],
+note(s, 64, 522, 1152,
+     [("Jalur 1 juta/18 bulan: ", {"bold": True, "color": TEXT}),
+      ("butuh 55 rb follower/bulan — 7–9× output paket agresif. Realistisnya Rp 50 jt+ media/bulan, atau perpanjang timeline ke 36–42 bulan.", {})],
      h=48)
 footer(s, 26)
 
@@ -1425,8 +1441,9 @@ for i, (label, val, extra, ratio) in enumerate(stages):
          [(val + "  ", {"bold": True, "color": WHITE}), (extra, {"color": MUTED})],
          size=7.4, align="r")
     y += 46
-text(s, 64, 468, 560, 28, "Angka adalah target bulan ke-12, bukan bulan pertama. Konversi diuji dan disesuaikan setiap minggu.",
-     size=6.6, color=MUTED2, align="c", line_spacing=1.35)
+text(s, 64, 458, 560, 54,
+     "Funnel ini jalur stretch bulan ke-12. Base case paket agresif: 4–8 rb follower + 800–1.500 leads/bulan (CPL Rp 10–60 rb). Retargeting viewer 50% Reels atau pengunjung situs dengan testimoni alumni menurunkan CPL.",
+     size=6.8, color=MUTED2, align="c", line_spacing=1.35)
 
 # doughnut chart
 from pptx.chart.data import CategoryChartData
@@ -1486,7 +1503,7 @@ loops = [
     ("1", "Loop Reels", "Tonton → bagikan → jangkauan baru → follower → lebih banyak yang menonton."),
     ("2", "Loop kolaborasi", "Satu collab post muncul di dua profil. Audiens silang tanpa biaya iklan."),
     ("3", "Loop komunitas", "WA Channel → pengumuman → mahasiswa bagikan → teman bergabung."),
-    ("4", "Loop kampus", "50 mahasiswa kreator memproduksi konten harian. Biaya rendah, volume tinggi."),
+    ("4", "Loop kampus", "20 ambassador mahasiswa memproduksi konten harian. Biaya rendah, volume tinggi."),
     ("5", "Loop offline", "Event → liputan → konten → pendaftaran event berikutnya. Roda yang berputar."),
 ]
 for i, (n, t, d) in enumerate(loops):
@@ -1500,8 +1517,8 @@ for i, (n, t, d) in enumerate(loops):
     text(s, x + 14, 294, 192, 72, d, size=7.0, color=MUTED, line_spacing=1.38)
 
 cards = [
-    ("Program kreator mahasiswa", "50 kreator", "2 konten/minggu · honor Rp 150 rb/konten + merchandise. Rekrutmen lewat open call."),
-    ("KOL & alumni", "10 KOL Aceh + 3 alumni nasional", "per kuartal. Konten otentik, bukan iklan scripted."),
+    ("Program kreator mahasiswa", "20 ambassador", "Rp 300–500 rb/bulan · 2 konten/minggu. Rekrutmen lewat open call."),
+    ("KOL, alumni & Guru BK", "10 KOL Aceh + 3 alumni", "per kuartal + kolaborasi Guru BK SMA. Konten otentik, bukan iklan scripted."),
     ("Momen besar", "Wisuda, orientasi, kompetisi, Ramadan.", "Siapkan content sprint 2 minggu sebelum momen."),
 ]
 for i, (h, strong, d) in enumerate(cards):
@@ -1545,7 +1562,7 @@ phases = [
         "5 pilar konten & template visual",
         "Produksi batch 40 konten"], "red"),
     ("HARI 31–60", "Peluncuran", [
-        "Kampanye awareness + traffic",
+        "Kampanye leads + traffic · tes Rp 50–150 rb/hari",
         "2 konten/hari, 1 live/minggu",
         "SOP balas komentar < 30 menit",
         "10 kolaborasi pertama",
@@ -1554,7 +1571,7 @@ phases = [
         "Matikan kreatif > biaya target",
         "Scale pemenang 20%/3 hari",
         "Uji audiens & penawaran baru",
-        "Rekrut 50 kreator mahasiswa",
+        "Rekrut 20 ambassador mahasiswa",
         "Review kuartal & rencana Q2"], "plain"),
 ]
 for i, (tag, title, items, tone) in enumerate(phases):
@@ -1625,14 +1642,14 @@ header2(s, "KPI", [
 ], tag="Bab 05 · Eksekusi")
 
 kpis = [
-    ("Pertumbuhan bersih", "+55 rb", "follower/bulan · bulan 12"),
-    ("Reach bulanan", "15 jt", "akun unik · semua platform"),
+    ("Pertumbuhan bersih", "+4–8 rb", "follower/bulan · paket agresif"),
+    ("Reach bulanan", "5–8 jt", "akun unik · organik + iklan"),
     ("Engagement rate", "≥ 6%", "per reach · Instagram"),
     ("Simpan + bagikan", "≥ 2%", "sinyal kualitas konten"),
-    ("Biaya per follower", "≤ Rp 2.500", "blended · semua kampanye"),
+    ("Biaya per follower", "Rp 1–4 rb", "blended · semua kampanye"),
     ("Waktu respons", "< 30 mnt", "komentar & DM jam kerja"),
     ("Sentimen positif", "≥ 85%", "social listening bulanan"),
-    ("Pendaftar dari sosial", "+20%", "atribusi UTM · per kuartal"),
+    ("Leads PMB", "800–1.500", "per bulan · CPL Rp 10–60 rb"),
 ]
 for i, (l, v, d) in enumerate(kpis):
     x = 64 + (i % 4) * 292
@@ -1695,7 +1712,7 @@ header2(s, "Risiko", [
 
 rows = [
     ["Akun iklan dibatasi", ("Tinggi", REDB), "Verifikasi bisnis, dua admin, kreatif patuh kebijakan, tidak ada klaim berlebihan."],
-    ["Follower palsu / engagement dibeli", ("Tinggi", REDB), "Larangan total. Tidak ada bot, tidak ada giveaway follow-only. Audit kualitas audiens bulanan."],
+    ["Follower palsu / engagement dibeli", ("Tinggi", REDB), "Larangan total. Harga Rp 70–100 rb/1.000 tidak sebanding: engagement anjlok, shadowban, akun bisa dihapus. Audit audiens bulanan."],
     ["Kelelahan kreatif", ("Sedang", AMBER), "Bank 14 hari konten, 3 varian hook, rotasi format tiap 2 minggu."],
     ["Krisis reputasi", ("Tinggi", REDB), "SOP eskalasi 1 jam, satu juru bicara, tanggapan tertulis sebelum komentar dibuka."],
     ["Anggaran tidak efisien", ("Sedang", AMBER), "Aturan kill/scale mingguan, frekuensi < 3, biaya per follow jadi KPI utama."],
@@ -1754,11 +1771,11 @@ header2(s, "Penutup", [
 ])
 
 dec = [
-    ("1", "Setujui anggaran Rp 46 jt/bulan", "Rp 35 jt media + Rp 9 jt produksi + Rp 2 jt tools, dievaluasi per kuartal."),
+    ("1", "Setujui paket Agresif Rp 15,5–23 jt/bulan", "Rp 10,5–15 jt iklan + Rp 5–8 jt produksi; fee agensi opsional. Dievaluasi per kuartal."),
     ("2", "Tunjuk satu pemilik akun", "Social Media Lead dengan mandat lintas biro, bukan komite."),
     ("3", "Lengkapi dokumen verifikasi", "NIB, akta, SK, dan bukti alamat diserahkan dalam 7 hari."),
     ("4", "Aktifkan studio konten", "Ruang, kamera, lampu, dan dua editor. Volume dimulai dari sini."),
-    ("5", "Setujui target per kuartal", "Q1 25 rb · Q2 95 rb · Q3 220 rb · Q4 420 rb · Q5 680 rb · Q6 1 juta."),
+    ("5", "Setujui dua jalur target", "Base case 100–150 rb dalam 18 bulan; stretch 1 juta/18 bulan hanya dengan Rp 50 jt+ media atau 36–42 bulan."),
 ]
 y = 214
 for n, t, d in dec:

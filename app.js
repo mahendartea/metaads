@@ -284,7 +284,7 @@
   calc();
 
   /* ---------------- growth chart ---------------- */
-  const CH = { W: 1000, H: 330, L: 58, R: 26, T: 26, B: 40 };
+  const CH = { W: 1000, H: 300, L: 58, R: 26, T: 26, B: 40 };
 
   function smoothPath(pts) {
     let d = "M" + pts[0][0] + "," + pts[0][1];
