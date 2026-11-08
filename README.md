@@ -17,6 +17,24 @@ Tersedia dalam **tiga format**:
 
 ---
 
+## Publikasi GitHub Pages
+
+Presentasi online: **https://mahendartea.github.io/metaads/**
+
+- Workflow: `.github/workflows/pages.yml`
+- Setiap **push ke `main`** otomatis membangun dan men-deploy situs.
+- Deploy manual: tab **Actions** → *Deploy presentation to GitHub Pages* → **Run workflow**.
+- Sumber Pages: **Settings → Pages → Build and deployment → GitHub Actions**.
+- Unduhan langsung:
+  - PDF: `/UUI-Meta-Ads-2026.pdf`
+  - PowerPoint: `/UUI-Meta-Ads-2026.pptx`
+
+Workflow hanya mempublikasikan file yang dibutuhkan situs (`index.html`,
+`styles.css`, `app.js`, `assets/`) plus PDF dan PPTX. Folder `tools/`, naskah
+internal, dan file sumber tidak ikut dipublikasikan.
+
+---
+
 ## Isi presentasi (37 slide)
 
 | Bab | Slide | Isi |
