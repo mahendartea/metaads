@@ -19,17 +19,18 @@ ROOT = os.path.dirname(HERE)
 A = lambda *p: os.path.join(HERE, *p)
 
 # ---------------------------------------------------------------- palette
-TEXT = RGBColor(0xF4, 0xF6, 0xFB)
+TEXT = RGBColor(0x0D, 0x15, 0x26)
 WHITE = RGBColor(0xFF, 0xFF, 0xFF)
-MUTED = RGBColor(0x98, 0xA3, 0xBA)
-MUTED2 = RGBColor(0x6F, 0x7B, 0x93)
-RED = RGBColor(0xCE, 0x20, 0x20)
-REDB = RGBColor(0xFF, 0x4D, 0x5E)
-BLUE = RGBColor(0x0A, 0x7C, 0xFF)
-BLUEB = RGBColor(0x38, 0xB6, 0xFF)
-GREEN = RGBColor(0x25, 0xD3, 0x66)
-AMBER = RGBColor(0xFF, 0xC2, 0x4B)
-LINEC = RGBColor(0xFF, 0xFF, 0xFF)
+SURF = RGBColor(0x0D, 0x15, 0x26)
+MUTED = RGBColor(0x4A, 0x5A, 0x75)
+MUTED2 = RGBColor(0x6B, 0x7A, 0x92)
+RED = RGBColor(0xC8, 0x1E, 0x2B)
+REDB = RGBColor(0xC8, 0x1E, 0x2B)
+BLUE = RGBColor(0x0A, 0x6E, 0xD1)
+BLUEB = RGBColor(0x0A, 0x63, 0xC9)
+GREEN = RGBColor(0x12, 0x8C, 0x4A)
+AMBER = RGBColor(0xB4, 0x53, 0x09)
+LINEC = RGBColor(0x0D, 0x15, 0x26)
 
 FONT = "Arial"
 MONO = "Menlo"
@@ -111,7 +112,7 @@ def card(s, x, y, w, h, tone="plain", radius=16):
     if tone == "blue":
         return shape(s, x, y, w, h, bg=BLUE, bg_alpha=0.13, border=BLUEB,
                      border_alpha=0.28, radius=radius)
-    return shape(s, x, y, w, h, bg=WHITE, bg_alpha=0.045, border=WHITE,
+    return shape(s, x, y, w, h, bg=SURF, bg_alpha=0.045, border=SURF,
                  border_alpha=0.10, radius=radius)
 
 
@@ -184,7 +185,7 @@ def textbox(s, x, y, w, h, anchor="t", margins=(0, 0, 0, 0)):
     return tf
 
 
-def hline(s, x, y, w, color=WHITE, alpha=0.10, width=0.75):
+def hline(s, x, y, w, color=SURF, alpha=0.10, width=0.75):
     ln = s.shapes.add_connector(1, IN(x), IN(y), IN(x + w), IN(y))
     ln.line.color.rgb = color
     ln.line.width = Pt(width)
@@ -195,9 +196,9 @@ def hline(s, x, y, w, color=WHITE, alpha=0.10, width=0.75):
     return ln
 
 
-def pill(s, x, y, w, h, label, color=MUTED, border=WHITE, alpha=0.14,
+def pill(s, x, y, w, h, label, color=MUTED, border=SURF, alpha=0.14,
          size=7.5, bgalpha=0.04):
-    shape(s, x, y, w, h, bg=WHITE, bg_alpha=bgalpha, border=border,
+    shape(s, x, y, w, h, bg=SURF, bg_alpha=bgalpha, border=border,
           border_alpha=alpha, radius=h / 2)
     text(s, x, y + (h - size * 1.33) / 2 - 1, w, size * 1.6, label, size=size,
          color=color, align="c", spc=0.4)
@@ -231,7 +232,7 @@ def note(s, x, y, w, content, h=42, tone="amber"):
               border_alpha=0.20, radius=9)
         ic_color = AMBER
     else:
-        shape(s, x, y, w, h, bg=WHITE, bg_alpha=0.03, border=WHITE,
+        shape(s, x, y, w, h, bg=SURF, bg_alpha=0.03, border=SURF,
               border_alpha=0.10, radius=9)
         ic_color = REDB
     text(s, x + 14, y + 9, 20, 18, "→", size=10, color=ic_color, bold=True)
@@ -295,12 +296,12 @@ def header2(s, eyebrow, lines, tag=None, lede=None, y=44, size=30, w=1110):
 s = new_slide("cover")
 for (x, y, size, al) in [(880, -140, 760, 0.055), (975, -45, 570, 0.045),
                          (1070, 50, 380, 0.04)]:
-    shape(s, x, y, size, size, kind=MSO_SHAPE.OVAL, border=WHITE,
+    shape(s, x, y, size, size, kind=MSO_SHAPE.OVAL, border=SURF,
           border_alpha=al, bw=1)
 
 s.shapes.add_picture(ASSET("uui-logo.png"), IN(64), IN(52), height=IN(50))
-shape(s, 215, 62, 1, 30, kind=MSO_SHAPE.RECTANGLE, bg=WHITE, bg_alpha=0.18)
-s.shapes.add_picture(ASSET("meta-logo-white.png"), IN(234), IN(66), height=IN(22))
+shape(s, 215, 62, 1, 30, kind=MSO_SHAPE.RECTANGLE, bg=SURF, bg_alpha=0.18)
+s.shapes.add_picture(ASSET("meta-logo-dark.png"), IN(234), IN(66), height=IN(22))
 
 pill(s, 1004, 44, 212, 29, "DOKUMEN INTERNAL  ·  2026", color=MUTED, alpha=0.18,
      size=7.2)
@@ -312,16 +313,16 @@ text(s, 118, 266, 700, 16, "RENCANA INDUK MEDIA SOSIAL & META ADS", size=7.5,
 tf = textbox(s, 64, 294, 940, 190)
 p = tf.paragraphs[0]
 p.line_spacing = 0.95
-_runs(p, [("Dari Kampus", {"color": RGBColor(0xE9, 0xEF, 0xFB)})], 60, TEXT,
+_runs(p, [("Dari Kampus", {"color": RGBColor(0x0D, 0x15, 0x26)})], 60, TEXT,
       True, False, FONT, -1.6)
 p2 = tf.add_paragraph()
 p2.line_spacing = 0.95
-_runs(p2, [("ke Feed.", {"color": RGBColor(0x66, 0x73, 0x8C)})], 60, TEXT, True, False,
+_runs(p2, [("ke Feed.", {"color": RGBColor(0x6B, 0x7A, 0x92)})], 60, TEXT, True, False,
       FONT, -1.6)
 
 text(s, 64, 500, 760, 64,
      [("Peta jalan 18 bulan untuk membangun kehadiran Universitas Ubudiyah Indonesia di ekosistem Meta — dari pendaftaran akun iklan hingga ", {}),
-      ("1 juta audiens", {"bold": True, "color": WHITE}),
+      ("1 juta audiens", {"bold": True, "color": TEXT}),
       (" yang benar-benar terlibat.", {})],
      size=11.5, color=MUTED, line_spacing=1.45)
 
@@ -359,7 +360,7 @@ items = [
 ]
 y = 228
 for num, t, d in items:
-    shape(s, 64, y, 584, 64, bg=WHITE, bg_alpha=0.03, border=WHITE,
+    shape(s, 64, y, 584, 64, bg=SURF, bg_alpha=0.03, border=SURF,
           border_alpha=0.09, radius=10)
     shape(s, 80, y + 18, 28, 28, bg=RED, radius=7)
     text(s, 80, y + 24, 28, 16, num, size=8, color=WHITE, bold=True, align="c")
@@ -400,7 +401,7 @@ metrics = [("1.000.000", "AUDIENS TERAFILIASI · STRETCH\nDALAM 18 BULAN", REDB)
 for i, (n, l, c) in enumerate(metrics):
     x = 64 + i * 384
     if i:
-        shape(s, x - 18, 228, 1, 74, kind=MSO_SHAPE.RECTANGLE, bg=WHITE, bg_alpha=0.10)
+        shape(s, x - 18, 228, 1, 74, kind=MSO_SHAPE.RECTANGLE, bg=SURF, bg_alpha=0.10)
     text(s, x, 220, 340, 54, n, size=36, color=c, bold=True, spc=-1.0)
     tf = textbox(s, x, 292, 320, 34)
     for j, part in enumerate(l.split("\n")):
@@ -417,7 +418,7 @@ cards = [
 for i, (badge, t, d) in enumerate(cards):
     x = 64 + i * 292
     card(s, x, 336, 276, 212)
-    shape(s, x + 18, 354, 50, 26, bg=WHITE, bg_alpha=0.07, border=WHITE,
+    shape(s, x + 18, 354, 50, 26, bg=SURF, bg_alpha=0.07, border=SURF,
           border_alpha=0.12, radius=7)
     text(s, x + 18, 361, 50, 14, badge, size=7.6, color=TEXT, bold=True, align="c")
     tf = textbox(s, x + 18, 396, 240, 44)
@@ -436,7 +437,7 @@ footer(s, 3)
 
 # ============================================================ 04 DIVIDER 01
 s = new_slide("divider")
-text(s, 84, 214, 330, 250, "01", size=172, color=RGBColor(0x2A, 0x34, 0x4A),
+text(s, 84, 214, 330, 250, "01", size=172, color=RGBColor(0xC9, 0xD2, 0xE0),
      bold=True, spc=-4)
 shape(s, 90, 508, 96, 3, kind=MSO_SHAPE.RECTANGLE, bg=RED)
 text(s, 430, 242, 300, 14, "FONDASI", size=7.5, color=REDB, bold=True, spc=2.2)
@@ -474,12 +475,12 @@ for i, (ic, t, strong, d, kpi, tone) in enumerate(platforms):
     elif ic == "wa":
         s.shapes.add_picture(ASSET("WhatsApp.png"), IN(x + 18), IN(268), width=IN(42), height=IN(42))
     else:
-        shape(s, x + 18, 268, 42, 42, bg=WHITE, bg_alpha=0.08, border=WHITE,
+        shape(s, x + 18, 268, 42, 42, bg=SURF, bg_alpha=0.08, border=SURF,
               border_alpha=0.16, radius=12)
-        text(s, x + 18, 277, 42, 24, "@", size=16, color=WHITE, bold=True, align="c")
+        text(s, x + 18, 277, 42, 24, "@", size=16, color=TEXT, bold=True, align="c")
 
     text(s, x + 18, 326, 240, 18, t, size=11, color=TEXT, bold=True)
-    text(s, x + 18, 350, 242, 30, strong, size=8.6, color=WHITE, bold=True, line_spacing=1.25)
+    text(s, x + 18, 350, 242, 30, strong, size=8.6, color=TEXT, bold=True, line_spacing=1.25)
     text(s, x + 18, 378, 242, 100, d, size=8.2, color=MUTED, line_spacing=1.4)
     hline(s, x + 18, 490, 240, alpha=0.10)
     text(s, x + 18, 500, 240, 30, kpi, size=7.2, color=MUTED2)
@@ -532,11 +533,11 @@ header2(s, "Arsitektur", [
 ], tag="Bab 01 · Fondasi")
 
 # diagram
-shape(s, 64, 238, 760, 252, bg=WHITE, bg_alpha=0.02, border=WHITE,
+shape(s, 64, 238, 760, 252, bg=SURF, bg_alpha=0.02, border=SURF,
       border_alpha=0.10, radius=14)
 shape(s, 80, 252, 728, 52, bg=RED, bg_alpha=0.16, border=REDB,
       border_alpha=0.35, radius=9)
-text(s, 94, 262, 86, 30, "BUSINESS\nPORTFOLIO", size=5.8, color=RGBColor(0xFF, 0x9B, 0xA5),
+text(s, 94, 262, 86, 30, "BUSINESS\nPORTFOLIO", size=5.8, color=RGBColor(0xA5, 0x12, 0x21),
      bold=True, spc=0.8, line_spacing=1.15)
 text(s, 186, 266, 380, 18, "Universitas Ubudiyah Indonesia", size=9.4,
      color=TEXT, bold=True)
@@ -551,7 +552,7 @@ arch = [
 ]
 for i, (label, lines) in enumerate(arch):
     x = 80 + i * 182
-    shape(s, x, 318, 174, 122, bg=WHITE, bg_alpha=0.025, border=WHITE,
+    shape(s, x, 318, 174, 122, bg=SURF, bg_alpha=0.025, border=SURF,
           border_alpha=0.09, radius=8)
     text(s, x + 10, 326, 150, 12, label, size=5.8, color=REDB, bold=True, spc=1.0)
     tf = textbox(s, x + 10, 342, 155, 108)
@@ -560,7 +561,7 @@ for i, (label, lines) in enumerate(arch):
         p.line_spacing = 1.55
         _runs(p, ln, 7.2, MUTED2 if ln.startswith("+") else MUTED, False,
               ln.startswith("+"), FONT, 0)
-shape(s, 80, 448, 728, 30, bg=WHITE, bg_alpha=0.02, border=None, radius=6)
+shape(s, 80, 448, 728, 30, bg=SURF, bg_alpha=0.02, border=None, radius=6)
 text(s, 80, 455, 728, 16, "SATU PORTOFOLIO  ·  BANYAK AKUN PER TUJUAN  ·  AKSES BERBASIS PERAN",
      size=6.2, color=MUTED2, align="c", spc=1.0)
 
@@ -571,7 +572,7 @@ rules = [
 ]
 y = 238
 for num, t, d in rules:
-    shape(s, 848, y, 368, 88, bg=WHITE, bg_alpha=0.03, border=WHITE,
+    shape(s, 848, y, 368, 88, bg=SURF, bg_alpha=0.03, border=SURF,
           border_alpha=0.09, radius=10)
     shape(s, 862, y + 16, 24, 24, bg=RED, radius=6)
     text(s, 862, y + 21, 24, 12, num, size=7.2, color=WHITE, bold=True, align="c")
@@ -583,7 +584,7 @@ footer(s, 6)
 
 # ============================================================ 07 DIVIDER 02
 s = new_slide("divider")
-text(s, 84, 214, 330, 250, "02", size=172, color=RGBColor(0x2A, 0x34, 0x4A),
+text(s, 84, 214, 330, 250, "02", size=172, color=RGBColor(0xC9, 0xD2, 0xE0),
      bold=True, spc=-4)
 shape(s, 90, 508, 96, 3, kind=MSO_SHAPE.RECTANGLE, bg=RED)
 text(s, 430, 242, 300, 14, "PENDAFTARAN", size=7.5, color=REDB, bold=True, spc=2.2)
@@ -618,7 +619,7 @@ steps = [
 for i, (n, t, d) in enumerate(steps):
     x = 64 + (i % 5) * 234
     y = 222 + (i // 5) * 132
-    shape(s, x, y, 224, 120, bg=WHITE, bg_alpha=0.035, border=WHITE,
+    shape(s, x, y, 224, 120, bg=SURF, bg_alpha=0.035, border=SURF,
           border_alpha=0.09, radius=10)
     text(s, x + 14, y + 12, 40, 20, n, size=13, color=RGBColor(0x55, 0x5F, 0x75), bold=True)
     hline(s, x + 52, y + 22, 155, alpha=0.16)
@@ -633,7 +634,7 @@ info = [
 ]
 for i, (h, body) in enumerate(info):
     x = 64 + i * 390
-    shape(s, x, 500, 372, 92, bg=WHITE, bg_alpha=0.022, border=WHITE,
+    shape(s, x, 500, 372, 92, bg=SURF, bg_alpha=0.022, border=SURF,
           border_alpha=0.08, radius=10)
     text(s, x + 16, 512, 330, 12, h, size=6.2, color=MUTED2, bold=True, spc=1.1)
     text(s, x + 16, 530, 338, 52, body, size=8.2, color=MUTED, line_spacing=1.35)
@@ -659,7 +660,7 @@ for col, items, x in [(0, left, 64), (1, right, 660)]:
     y = 214
     for num, t, d in items:
         h = 96 if num != "3" else 108
-        shape(s, x, y, 556, h, bg=WHITE, bg_alpha=0.03, border=WHITE,
+        shape(s, x, y, 556, h, bg=SURF, bg_alpha=0.03, border=SURF,
               border_alpha=0.09, radius=10)
         shape(s, x + 14, y + 14, 24, 24, bg=RED, radius=6)
         text(s, x + 14, y + 19, 24, 12, num, size=7.2, color=WHITE, bold=True, align="c")
@@ -687,7 +688,7 @@ left = [
 ]
 for num, t, d in left:
     y = 214 + (int(num) - 6) * 118
-    shape(s, 64, y, 556, 106, bg=WHITE, bg_alpha=0.03, border=WHITE,
+    shape(s, 64, y, 556, 106, bg=SURF, bg_alpha=0.03, border=SURF,
           border_alpha=0.09, radius=10)
     shape(s, 78, y + 14, 24, 24, bg=RED, radius=6)
     text(s, 78, y + 19, 24, 12, num, size=7.2, color=WHITE, bold=True, align="c")
@@ -700,7 +701,7 @@ right = [
 ]
 for i, (num, t, d) in enumerate(right):
     y = 214 + i * 118
-    shape(s, 660, y, 556, 106, bg=WHITE, bg_alpha=0.03, border=WHITE,
+    shape(s, 660, y, 556, 106, bg=SURF, bg_alpha=0.03, border=SURF,
           border_alpha=0.09, radius=10)
     shape(s, 674, y + 14, 24, 24, bg=RED, radius=6)
     text(s, 674, y + 19, 24, 12, num, size=7.2, color=WHITE, bold=True, align="c")
@@ -709,11 +710,11 @@ for i, (num, t, d) in enumerate(right):
 
 shape(s, 660, 452, 556, 116, bg=RED, bg_alpha=0.13, border=REDB,
       border_alpha=0.30, radius=10)
-text(s, 680, 464, 500, 14, "KESALAHAN PEMULA", size=6.4, color=RGBColor(0xFF, 0xB3, 0xBA),
+text(s, 680, 464, 500, 14, "KESALAHAN PEMULA", size=6.4, color=RGBColor(0xA5, 0x12, 0x21),
      bold=True, spc=1.4)
 text(s, 680, 484, 516, 74,
      "Menekan “Boost Post” untuk semua konten. Boost mengoptimalkan interaksi, bukan pertumbuhan follower atau pendaftaran. Gunakan Ads Manager untuk tujuan yang terukur.",
-     size=8.4, color=RGBColor(0xF3, 0xD7, 0xDA), line_spacing=1.4)
+     size=8.4, color=RGBColor(0x7A, 0x2E, 0x36), line_spacing=1.4)
 footer(s, 10)
 
 
@@ -753,7 +754,7 @@ y = 230
 for when, t, d in vtl:
     shape(s, 660, y + 6, 7, 7, kind=MSO_SHAPE.OVAL, bg=RED)
     if when != "SETELAHNYA":
-        shape(s, 663, y + 16, 1, 62, kind=MSO_SHAPE.RECTANGLE, bg=WHITE, bg_alpha=0.16)
+        shape(s, 663, y + 16, 1, 62, kind=MSO_SHAPE.RECTANGLE, bg=SURF, bg_alpha=0.16)
     text(s, 682, y, 420, 12, when, size=6.2, color=MUTED2, bold=True, spc=1.2)
     text(s, 682, y + 15, 510, 16, t, size=8.8, color=TEXT, bold=True)
     text(s, 682, y + 32, 510, 48, d, size=7.3, color=MUTED, line_spacing=1.35)
@@ -771,7 +772,7 @@ header2(s, "Tata kelola akun", [
     [("Akses minimum, ", {}), ("akuntabilitas maksimum.", {"color": BLUEB})],
 ], tag="Bab 02 · Meta Ads")
 
-shape(s, 64, 218, 750, 292, bg=WHITE, bg_alpha=0.02, border=WHITE,
+shape(s, 64, 218, 750, 292, bg=SURF, bg_alpha=0.02, border=SURF,
       border_alpha=0.09, radius=14)
 table(s, 88, 232, 702,
       ["Peran", "Siapa", "Izin"],
@@ -790,11 +791,11 @@ right = [
 y = 218
 for h, body, tone in right:
     shape(s, 840, y, 376, 98 if tone == "plain" else 104,
-          bg=RED if tone == "red" else WHITE,
+          bg=RED if tone == "red" else SURF,
           bg_alpha=0.10 if tone == "red" else 0.03,
-          border=REDB if tone == "red" else WHITE,
+          border=REDB if tone == "red" else SURF,
           border_alpha=0.28 if tone == "red" else 0.09, radius=10)
-    text(s, 858, y + 14, 330, 12, h, size=6.2, color=RGBColor(0xFF, 0xB3, 0xBA) if tone == "red" else MUTED2,
+    text(s, 858, y + 14, 330, 12, h, size=6.2, color=RGBColor(0xA5, 0x12, 0x21) if tone == "red" else MUTED2,
          bold=True, spc=1.2)
     text(s, 858, y + 32, 340, 58, body, size=7.6, color=MUTED, line_spacing=1.38)
     y += (98 if tone == "plain" else 104) + 10
@@ -808,11 +809,11 @@ header2(s, "Pengukuran", [
 ], tag="Bab 02 · Meta Ads")
 
 def flow_node(x, y, w, h, kicker, title, accent=False):
-    shape(s, x, y, w, h, bg=RED if accent else WHITE,
+    shape(s, x, y, w, h, bg=RED if accent else SURF,
           bg_alpha=0.13 if accent else 0.035,
-          border=REDB if accent else WHITE,
+          border=REDB if accent else SURF,
           border_alpha=0.32 if accent else 0.10, radius=8)
-    text(s, x + 12, y + 7, w - 24, 10, kicker.upper(), size=5.6, color=RGBColor(0xFF, 0x9B, 0xA5) if accent else MUTED2, bold=True, spc=1.0)
+    text(s, x + 12, y + 7, w - 24, 10, kicker.upper(), size=5.6, color=RGBColor(0xA5, 0x12, 0x21) if accent else MUTED2, bold=True, spc=1.0)
     text(s, x + 12, y + 19, w - 24, 14, title, size=7.4, color=TEXT, bold=True)
 
 flow_node(64, 218, 540, 42, "Situs & aplikasi", "uui.ac.id · landing PMB")
@@ -855,7 +856,7 @@ rows = [
     ["Leads", "Formulir PMB, unduh brosur, webinar", "Lead", "Rp 10–60 rb / lead"],
     ["Conversions", "Pendaftaran & pembayaran", "Event konversi", "Biaya per pendaftar"],
 ]
-shape(s, 64, 218, 1152, 268, bg=WHITE, bg_alpha=0.02, border=WHITE,
+shape(s, 64, 218, 1152, 268, bg=SURF, bg_alpha=0.02, border=SURF,
       border_alpha=0.09, radius=14)
 table(s, 88, 232, 1104,
       ["Tujuan", "Dipakai untuk", "Optimasi", "Benchmark"],
@@ -868,7 +869,7 @@ cards = [
 ]
 for i, (h, d) in enumerate(cards):
     x = 64 + i * 390
-    shape(s, x, 512, 372, 92, bg=WHITE, bg_alpha=0.022, border=WHITE,
+    shape(s, x, 512, 372, 92, bg=SURF, bg_alpha=0.022, border=SURF,
           border_alpha=0.08, radius=10)
     text(s, x + 16, 524, 330, 12, h.upper(), size=6.2, color=MUTED2, bold=True, spc=1.1)
     text(s, x + 16, 542, 340, 52, d, size=8.0, color=MUTED, line_spacing=1.36)
@@ -902,18 +903,18 @@ cards = [
 ]
 for i, (h, d, tone) in enumerate(cards):
     x = 64 + i * 390
-    shape(s, x, 418, 372, 112, bg=RED if tone == "red" else WHITE,
+    shape(s, x, 418, 372, 112, bg=RED if tone == "red" else SURF,
           bg_alpha=0.11 if tone == "red" else 0.025,
-          border=REDB if tone == "red" else WHITE,
+          border=REDB if tone == "red" else SURF,
           border_alpha=0.28 if tone == "red" else 0.08, radius=10)
     text(s, x + 16, 432, 330, 12, h.upper(), size=6.2,
-         color=RGBColor(0xFF, 0xB3, 0xBA) if tone == "red" else MUTED2, bold=True, spc=1.1)
+         color=RGBColor(0xA5, 0x12, 0x21) if tone == "red" else MUTED2, bold=True, spc=1.1)
     text(s, x + 16, 450, 340, 68, d, size=8.0, color=MUTED, line_spacing=1.36)
 footer(s, 15)
 
 # ============================================================ 16 DIVIDER 03
 s = new_slide("divider")
-text(s, 84, 214, 330, 250, "03", size=172, color=RGBColor(0x2A, 0x34, 0x4A),
+text(s, 84, 214, 330, 250, "03", size=172, color=RGBColor(0xC9, 0xD2, 0xE0),
      bold=True, spc=-4)
 shape(s, 90, 508, 96, 3, kind=MSO_SHAPE.RECTANGLE, bg=RED)
 text(s, 430, 242, 300, 14, "KONTEN & ENGAGEMENT", size=7.5, color=REDB, bold=True, spc=2.2)
@@ -943,7 +944,7 @@ pillars = [
 ]
 for i, (pct, t, d, fmt, tone) in enumerate(pillars):
     x = 64 + i * 232
-    shape(s, x, 232, 220, 196, bg=WHITE, bg_alpha=0.03, border=WHITE,
+    shape(s, x, 232, 220, 196, bg=SURF, bg_alpha=0.03, border=SURF,
           border_alpha=0.09, radius=12)
     pcol = {"red": REDB, "blue": BLUEB, "amber": AMBER, "green": GREEN, "plain": MUTED}[tone]
     shape(s, x + 16, 248, 44, 20, bg=pcol, bg_alpha=0.13, border=pcol,
@@ -986,7 +987,7 @@ rows = [
     ["Threads", "Teks, foto, repost", "3–5 post/hari", "08.00–22.00", "Reply · repost"],
     ["WhatsApp", "Pengumuman, voice note", "2–3 update/hari", "07.00 · 16.00", "View · CTR"],
 ]
-shape(s, 64, 220, 1152, 244, bg=WHITE, bg_alpha=0.02, border=WHITE,
+shape(s, 64, 220, 1152, 244, bg=SURF, bg_alpha=0.02, border=SURF,
       border_alpha=0.09, radius=14)
 table(s, 88, 234, 1104,
       ["Platform", "Format utama", "Frekuensi", "Jam tayang", "KPI utama"],
@@ -999,7 +1000,7 @@ cards = [
 ]
 for i, (h, d) in enumerate(cards):
     x = 64 + i * 390
-    shape(s, x, 492, 372, 92, bg=WHITE, bg_alpha=0.022, border=WHITE,
+    shape(s, x, 492, 372, 92, bg=SURF, bg_alpha=0.022, border=SURF,
           border_alpha=0.08, radius=10)
     text(s, x + 16, 504, 330, 12, h.upper(), size=6.2, color=MUTED2, bold=True, spc=1.1)
     text(s, x + 16, 522, 340, 56, d, size=8.0, color=MUTED, line_spacing=1.36)
@@ -1056,7 +1057,7 @@ beats = [
 ]
 y = 178
 for tag, t, d in beats:
-    shape(s, 430, y, 786, 58, bg=WHITE, bg_alpha=0.03, border=WHITE,
+    shape(s, 430, y, 786, 58, bg=SURF, bg_alpha=0.03, border=SURF,
           border_alpha=0.09, radius=9)
     shape(s, 444, y + 15, 40, 28, bg=RED, radius=6)
     text(s, 444, y + 22, 40, 14, tag, size=6.2, color=WHITE, bold=True, align="c")
@@ -1068,7 +1069,7 @@ metrics = [("3-detik hold", "≥ 65%"), ("Completion rate", "≥ 35%"),
            ("Share rate", "≥ 1,5%"), ("Follow / 1.000 views", "≥ 8")]
 for i, (l, v) in enumerate(metrics):
     x = 64 + i * 292
-    shape(s, x, 590, 276, 56, bg=WHITE, bg_alpha=0.025, border=WHITE,
+    shape(s, x, 590, 276, 56, bg=SURF, bg_alpha=0.025, border=SURF,
           border_alpha=0.08, radius=9)
     text(s, x + 14, 599, 240, 12, l, size=6.2, color=MUTED2)
     text(s, x + 14, 614, 240, 24, v, size=13, color=TEXT, bold=True)
@@ -1094,7 +1095,7 @@ for i, (tag, t, d, tone) in enumerate(eng):
     x = 64 + (i % 3) * 384
     y = 226 + (i // 3) * 126
     col = {"red": REDB, "blue": BLUEB, "green": GREEN, "amber": AMBER, "plain": MUTED}[tone]
-    shape(s, x, y, 360, 114, bg=WHITE, bg_alpha=0.03, border=WHITE,
+    shape(s, x, y, 360, 114, bg=SURF, bg_alpha=0.03, border=SURF,
           border_alpha=0.09, radius=11)
     shape(s, x + 16, y + 14, max(54, 14 + len(tag) * 4.6), 20, bg=col,
           bg_alpha=0.13, border=col, border_alpha=0.28, radius=10)
@@ -1127,7 +1128,7 @@ days = [
 ]
 for i, (d, t, hook, fmt) in enumerate(days):
     x = 64 + i * 165
-    shape(s, x, 222, 157, 152, bg=WHITE, bg_alpha=0.03, border=WHITE,
+    shape(s, x, 222, 157, 152, bg=SURF, bg_alpha=0.03, border=SURF,
           border_alpha=0.09, radius=10)
     text(s, x + 12, 234, 60, 12, d.upper(), size=6.2, color=REDB, bold=True, spc=1.2)
     text(s, x + 12, 250, 130, 14, t, size=8.4, color=TEXT, bold=True)
@@ -1142,7 +1143,7 @@ ops = [
 ]
 for i, (h, d) in enumerate(ops):
     x = 64 + i * 390
-    shape(s, x, 396, 372, 88, bg=WHITE, bg_alpha=0.022, border=WHITE,
+    shape(s, x, 396, 372, 88, bg=SURF, bg_alpha=0.022, border=SURF,
           border_alpha=0.08, radius=10)
     text(s, x + 16, 408, 330, 12, h, size=6.2, color=MUTED2, bold=True, spc=1.1)
     text(s, x + 16, 426, 340, 50, d, size=8.0, color=MUTED, line_spacing=1.35)
@@ -1156,7 +1157,7 @@ footer(s, 21)
 
 # ============================================================ 22 DIVIDER 04
 s = new_slide("divider")
-text(s, 84, 214, 330, 250, "04", size=172, color=RGBColor(0x2A, 0x34, 0x4A),
+text(s, 84, 214, 330, 250, "04", size=172, color=RGBColor(0xC9, 0xD2, 0xE0),
      bold=True, spc=-4)
 shape(s, 90, 508, 96, 3, kind=MSO_SHAPE.RECTANGLE, bg=RED)
 text(s, 430, 242, 300, 14, "TARGET 1 JUTA", size=7.5, color=REDB, bold=True, spc=2.2)
@@ -1182,7 +1183,7 @@ mets = [("987.600", "FOLLOWER BARU\nYANG HARUS DIDAPAT", REDB),
 for i, (n, l, c) in enumerate(mets):
     x = 64 + i * 190
     if i:
-        shape(s, x - 14, 232, 1, 66, kind=MSO_SHAPE.RECTANGLE, bg=WHITE, bg_alpha=0.10)
+        shape(s, x - 14, 232, 1, 66, kind=MSO_SHAPE.RECTANGLE, bg=SURF, bg_alpha=0.10)
     text(s, x, 226, 180, 42, n, size=27, color=c, bold=True, spc=-0.8)
     tf = textbox(s, x, 272, 170, 30)
     for j, part in enumerate(l.split("\n")):
@@ -1191,7 +1192,7 @@ for i, (n, l, c) in enumerate(mets):
         _runs(p, part, 6.2, MUTED2, True, False, FONT, 1.0)
 
 text(s, 64, 330, 540, 52,
-     [("Perhitungan: ", {}), ("1.000.000 − 12.400 baseline = 987.600", {"color": WHITE, "font": MONO}),
+     [("Perhitungan: ", {}), ("1.000.000 − 12.400 baseline = 987.600", {"color": TEXT, "font": MONO}),
       (" dibagi 547 hari. Angka ini bukan target harian yang datar — pertumbuhan mengikuti kurva: lambat di awal, cepat saat mesin konten dan iklan matang.", {})],
      size=7.4, color=MUTED, line_spacing=1.45)
 note(s, 64, 398, 540,
@@ -1199,7 +1200,7 @@ note(s, 64, 398, 540,
       ("Benchmark kampus: paket agresif Rp 15,5–23 jt/bulan → 4–8 rb follower/bulan. 1 juta/18 bulan = 55 rb/bulan (7–9×). Audit akun di hari pertama.", {})],
      h=74)
 
-shape(s, 660, 205, 556, 250, bg=WHITE, bg_alpha=0.04, border=WHITE,
+shape(s, 660, 205, 556, 250, bg=SURF, bg_alpha=0.04, border=SURF,
       border_alpha=0.10, radius=14)
 text(s, 680, 220, 300, 18, "Kalkulator target", size=10.5, color=TEXT, bold=True)
 pill(s, 1110, 219, 86, 22, "ILUSTRASI", color=MUTED, alpha=0.16, size=6)
@@ -1209,7 +1210,7 @@ fields = [("FOLLOWERS SAAT INI", "12.400"), ("TARGET FOLLOWERS", "1.000.000"),
 for i, (lab, val) in enumerate(fields):
     x = 680 + i * 172
     text(s, x, 254, 150, 10, lab, size=5.8, color=MUTED2, spc=0.6)
-    shape(s, x, 268, 158, 34, bg=WHITE, bg_alpha=0.05, border=WHITE,
+    shape(s, x, 268, 158, 34, bg=SURF, bg_alpha=0.05, border=SURF,
           border_alpha=0.12, radius=7)
     text(s, x + 9, 278, 140, 16, val, size=8.2, color=TEXT, bold=True, font=MONO)
 
@@ -1223,7 +1224,7 @@ for i, (n, l) in enumerate(outs):
 shape(s, 680, 382, 516, 30, bg=AMBER, bg_alpha=0.10, border=AMBER,
       border_alpha=0.22, radius=7)
 text(s, 690, 389, 496, 16, "Sangat agresif · butuh mesin konten harian + paid scale",
-     size=6.8, color=RGBColor(0xFF, 0xE0, 0xA3))
+     size=6.8, color=RGBColor(0x8A, 0x5A, 0x00))
 
 footer(s, 23)
 
@@ -1236,13 +1237,13 @@ header2(s, "Alokasi", [
 
 bars = [("Instagram", "50% · Rp 5,3–7,5 jt", 0.50, REDB),
         ("Facebook", "35% · Rp 3,7–5,3 jt", 0.35, BLUEB),
-        ("Threads", "15% · Rp 1,6–2,3 jt", 0.15, RGBColor(0xB0, 0x8C, 0xFF)),
+        ("Threads", "15% · Rp 1,6–2,3 jt", 0.15, RGBColor(0x8B, 0x5C, 0xF6)),
         ("WhatsApp", "0% · organik", 0.0, GREEN)]
 y = 250
 for name, val, ratio, c1 in bars:
     shape(s, 64, y + 9, 9, 9, bg=c1, radius=2)
     text(s, 82, y + 4, 110, 16, name, size=8.2, color=TEXT, bold=True)
-    shape(s, 195, y + 7, 360, 10, bg=WHITE, bg_alpha=0.07, border=None, radius=5)
+    shape(s, 195, y + 7, 360, 10, bg=SURF, bg_alpha=0.07, border=None, radius=5)
     if ratio > 0:
         shape(s, 195, y + 7, 360 * ratio, 10, bg=c1, border=None, radius=5)
     text(s, 570, y + 3, 120, 16, val, size=8.0, color=TEXT, bold=True)
@@ -1261,12 +1262,12 @@ text(s, 64, 498, 620, 16, "Target follower 18 bulan (stretch): IG 480 rb · FB 2
 cards = [
     ("INSTAGRAM · 50%", "Mesin akuisisi utama. Reels menanggung mayoritas follower baru; carousel mengubah penonton menjadi pendaftar.", REDB),
     ("FACEBOOK · 35%", "Jangkauan orang tua, guru BK, dan alumni. Iklan PMB diarahkan ke orang tua dan grup alumni.", BLUEB),
-    ("THREADS · 15%", "CPM masih paling murah, tetapi belum mesin leads. Fokus branding dan percakapan.", RGBColor(0xC3, 0xAA, 0xFF)),
-    ("WHATSAPP · 0% IKLAN", "Retensi dan konversi lewat kanal organik. Channel aktif mencegah kehilangan audiens.", RGBColor(0x8F, 0xF0, 0xB5)),
+    ("THREADS · 15%", "CPM masih paling murah, tetapi belum mesin leads. Fokus branding dan percakapan.", RGBColor(0x5B, 0x3F, 0xC4)),
+    ("WHATSAPP · 0% IKLAN", "Retensi dan konversi lewat kanal organik. Channel aktif mencegah kehilangan audiens.", RGBColor(0x0C, 0x7A, 0x3E)),
 ]
 y = 226
 for h, d, c in cards:
-    shape(s, 720, y, 496, 84, bg=WHITE, bg_alpha=0.03, border=WHITE,
+    shape(s, 720, y, 496, 84, bg=SURF, bg_alpha=0.03, border=SURF,
           border_alpha=0.09, radius=10)
     text(s, 738, y + 12, 450, 12, h, size=6.4, color=c, bold=True, spc=1.0)
     text(s, 738, y + 29, 460, 48, d, size=7.4, color=MUTED, line_spacing=1.36)
@@ -1290,7 +1291,7 @@ def cy(v):
 
 # phase bands
 for m1, m2, label in [(0, 6, "FONDASI"), (6, 12, "AKSELERASI"), (12, 18, "SKALA")]:
-    shape(s, cx(m1), CT, cx(m2) - cx(m1), CB - CT, bg=WHITE, bg_alpha=0.015,
+    shape(s, cx(m1), CT, cx(m2) - cx(m1), CB - CT, bg=SURF, bg_alpha=0.015,
           border=None, radius=0)
 
 for v in [0, 250, 500, 750, 1000]:
@@ -1300,7 +1301,7 @@ for v in [0, 250, 500, 750, 1000]:
          size=6.4, color=MUTED2, align="r")
 
 for m in [0, 3, 6, 9, 12, 15, 18]:
-    shape(s, cx(m), CT, 1, CB - CT, kind=MSO_SHAPE.RECTANGLE, bg=WHITE, bg_alpha=0.04)
+    shape(s, cx(m), CT, 1, CB - CT, kind=MSO_SHAPE.RECTANGLE, bg=SURF, bg_alpha=0.04)
     text(s, cx(m) - 30, CB + 10, 60, 12, ("Mulai" if m == 0 else f"Bln {m}"),
          size=6.4, color=MUTED2, align="c")
 
@@ -1351,10 +1352,10 @@ cl.fill.background()
 no_shadow(cl)
 
 for m, v in milestones[2:]:
-    shape(s, cx(m) - 4, cy(v) - 4, 8, 8, kind=MSO_SHAPE.OVAL, bg=RGBColor(0x07, 0x0B, 0x14),
+    shape(s, cx(m) - 4, cy(v) - 4, 8, 8, kind=MSO_SHAPE.OVAL, bg=WHITE,
           border=REDB, border_alpha=1, bw=1.4)
     label = "1 juta" if m == 18 else f"{v} rb"
-    text(s, cx(m) - 40, cy(v) - 21, 80, 14, str(label), size=7.0, color=WHITE,
+    text(s, cx(m) - 40, cy(v) - 21, 80, 14, str(label), size=7.0, color=TEXT,
          bold=True, align="c")
 text(s, CR - 190, cy(1000) - 36, 190, 12, "TARGET 18 BULAN", size=6.2, color=BLUEB,
      align="r", spc=1.2)
@@ -1366,7 +1367,7 @@ phases = [
 ]
 for i, (tag, t, d, tone) in enumerate(phases):
     x = 64 + i * 390
-    shape(s, x, 478, 372, 100, bg=WHITE, bg_alpha=0.025, border=WHITE,
+    shape(s, x, 478, 372, 100, bg=SURF, bg_alpha=0.025, border=SURF,
           border_alpha=0.08, radius=9)
     col = {"red": REDB, "blue": BLUEB, "amber": AMBER}[tone]
     pill(s, x + 14, 490, 62, 18, tag, color=col, border=col, alpha=0.25, size=5.8)
@@ -1385,7 +1386,7 @@ header2(s, "Anggaran", [
     [("Berapa harga ", {}), ("pertumbuhan yang wajar?", {"color": REDB})],
 ], tag="Bab 04 · 1 Juta")
 
-shape(s, 64, 205, 1152, 188, bg=WHITE, bg_alpha=0.02, border=WHITE,
+shape(s, 64, 205, 1152, 188, bg=SURF, bg_alpha=0.02, border=SURF,
       border_alpha=0.09, radius=14)
 rows = [
     ["Hemat", "Rp 75 rb", "Rp 2,25 jt", "Rp 1,5–3 jt", "Rp 3,75–5,25 jt", "500–1.200 follower · 50–150 leads"],
@@ -1403,14 +1404,14 @@ cards = [
 ]
 for i, (h, d, red) in enumerate(cards):
     x = 64 + i * 390
-    shape(s, x, 410, 372, 94, bg=RED if red else WHITE,
+    shape(s, x, 410, 372, 94, bg=RED if red else SURF,
           bg_alpha=0.11 if red else 0.025,
-          border=REDB if red else WHITE,
+          border=REDB if red else SURF,
           border_alpha=0.28 if red else 0.08, radius=10)
     text(s, x + 16, 424, 330, 12, h, size=6.2,
-         color=RGBColor(0xFF, 0xB3, 0xBA) if red else MUTED2, bold=True, spc=1.1)
+         color=RGBColor(0xA5, 0x12, 0x21) if red else MUTED2, bold=True, spc=1.1)
     text(s, x + 16, 442, 340, 54, d, size=7.8,
-         color=RGBColor(0xF0, 0xD4, 0xD8) if red else MUTED, line_spacing=1.35)
+         color=RGBColor(0x7A, 0x2E, 0x36) if red else MUTED, line_spacing=1.35)
 
 note(s, 64, 522, 1152,
      [("Jalur 1 juta/18 bulan: ", {"bold": True, "color": TEXT}),
@@ -1435,10 +1436,10 @@ for i, (label, val, extra, ratio) in enumerate(stages):
     w = 560 * ratio
     x = 64 + (560 - w) / 2
     shape(s, x, y, w, 38, bg=BLUE if i < 2 else (RED if i < 4 else GREEN),
-          bg_alpha=0.20 if i < 2 else 0.18, border=WHITE, border_alpha=0.14, radius=8)
+          bg_alpha=0.20 if i < 2 else 0.18, border=SURF, border_alpha=0.14, radius=8)
     text(s, x + 14, y + 11, w * 0.5, 16, label, size=7.6, color=TEXT, bold=True)
     text(s, x + w - 170, y + 10, 156, 16,
-         [(val + "  ", {"bold": True, "color": WHITE}), (extra, {"color": MUTED})],
+         [(val + "  ", {"bold": True, "color": TEXT}), (extra, {"color": MUTED})],
          size=7.4, align="r")
     y += 46
 text(s, 64, 458, 560, 54,
@@ -1483,7 +1484,7 @@ items = [("70", "Belanja terbukti", "Format yang sudah menurunkan biaya per foll
          ("10", "Eksperimen", "Format, audiens, atau penawaran baru.")]
 y = 416
 for n, t, d in items:
-    shape(s, 700, y, 516, 46, bg=WHITE, bg_alpha=0.025, border=WHITE,
+    shape(s, 700, y, 516, 46, bg=SURF, bg_alpha=0.025, border=SURF,
           border_alpha=0.08, radius=8)
     shape(s, 712, y + 11, 24, 24, bg=RED if n == "70" else (BLUE if n == "20" else MUTED2), radius=6)
     text(s, 712, y + 16, 24, 12, n, size=6.6, color=WHITE, bold=True, align="c")
@@ -1508,9 +1509,9 @@ loops = [
 ]
 for i, (n, t, d) in enumerate(loops):
     x = 64 + i * 232
-    shape(s, x, 226, 220, 152, bg=WHITE, bg_alpha=0.03, border=WHITE,
+    shape(s, x, 226, 220, 152, bg=SURF, bg_alpha=0.03, border=SURF,
           border_alpha=0.09, radius=10)
-    shape(s, x + 14, 240, 24, 24, bg=WHITE, bg_alpha=0.07, border=WHITE,
+    shape(s, x + 14, 240, 24, 24, bg=SURF, bg_alpha=0.07, border=SURF,
           border_alpha=0.12, radius=6)
     text(s, x + 14, 245, 24, 12, n, size=7.0, color=TEXT, bold=True, align="c")
     text(s, x + 14, 274, 190, 16, t, size=8.8, color=TEXT, bold=True)
@@ -1523,7 +1524,7 @@ cards = [
 ]
 for i, (h, strong, d) in enumerate(cards):
     x = 64 + i * 390
-    shape(s, x, 398, 372, 92, bg=WHITE, bg_alpha=0.022, border=WHITE,
+    shape(s, x, 398, 372, 92, bg=SURF, bg_alpha=0.022, border=SURF,
           border_alpha=0.08, radius=10)
     text(s, x + 16, 410, 330, 12, h.upper(), size=6.2, color=MUTED2, bold=True, spc=1.1)
     text(s, x + 16, 428, 340, 54,
@@ -1534,7 +1535,7 @@ footer(s, 28)
 
 # ============================================================ 29 DIVIDER 05
 s = new_slide("divider")
-text(s, 84, 214, 330, 250, "05", size=172, color=RGBColor(0x2A, 0x34, 0x4A),
+text(s, 84, 214, 330, 250, "05", size=172, color=RGBColor(0xC9, 0xD2, 0xE0),
      bold=True, spc=-4)
 shape(s, 90, 508, 96, 3, kind=MSO_SHAPE.RECTANGLE, bg=RED)
 text(s, 430, 242, 300, 14, "EKSEKUSI", size=7.5, color=REDB, bold=True, spc=2.2)
@@ -1576,9 +1577,9 @@ phases = [
 ]
 for i, (tag, title, items, tone) in enumerate(phases):
     x = 64 + i * 390
-    shape(s, x, 222, 372, 286, bg=RED if tone == "red" else (BLUE if tone == "blue" else WHITE),
+    shape(s, x, 222, 372, 286, bg=RED if tone == "red" else (BLUE if tone == "blue" else SURF),
           bg_alpha=0.11 if tone != "plain" else 0.025,
-          border=REDB if tone == "red" else (BLUEB if tone == "blue" else WHITE),
+          border=REDB if tone == "red" else (BLUEB if tone == "blue" else SURF),
           border_alpha=0.30 if tone != "plain" else 0.08, radius=12)
     tagcol = REDB if tone == "red" else (BLUEB if tone == "blue" else AMBER)
     pill(s, x + 18, 238, 74, 19, tag, color=tagcol, border=tagcol, alpha=0.28, size=5.8)
@@ -1603,7 +1604,7 @@ header2(s, "Tim", [
     [("Tim kecil, ", {}), ("tanggung jawab jelas.", {"color": BLUEB})],
 ], tag="Bab 05 · Eksekusi")
 
-shape(s, 64, 214, 760, 310, bg=WHITE, bg_alpha=0.02, border=WHITE,
+shape(s, 64, 214, 760, 310, bg=SURF, bg_alpha=0.02, border=SURF,
       border_alpha=0.09, radius=14)
 team = [
     ["Social Media Lead", "Strategi, kalender, kualitas, persetujuan", "1"],
@@ -1620,7 +1621,7 @@ table(s, 88, 228, 712, ["Peran", "Tanggung jawab utama", "FTE"],
 
 shape(s, 840, 214, 376, 104, bg=BLUE, bg_alpha=0.13, border=BLUEB,
       border_alpha=0.30, radius=10)
-text(s, 858, 226, 330, 12, "TOTAL", size=6.2, color=RGBColor(0xA9, 0xDB, 0xFF), bold=True, spc=1.2)
+text(s, 858, 226, 330, 12, "TOTAL", size=6.2, color=RGBColor(0x0A, 0x5F, 0xC0), bold=True, spc=1.2)
 text(s, 858, 242, 200, 38, "8,5", size=26, color=TEXT, bold=True)
 text(s, 858, 286, 340, 18, "FTE — kombinasi staf tetap, magang, dan vendor.", size=6.8, color=MUTED)
 
@@ -1628,7 +1629,7 @@ for i, (h, d) in enumerate([
         ("YANG TIDAK BOLEH DIRANGKAP", "Production dan approval. Orang yang membuat konten tidak boleh menjadi satu-satunya yang menyetujui konten."),
         ("AMBASSADOR", "20 mahasiswa berperan sebagai mata dan telinga di kampus. Bukan admin, tetapi sumber cerita dan jawaban.")]):
     y = 330 + i * 100
-    shape(s, 840, y, 376, 92, bg=WHITE, bg_alpha=0.025, border=WHITE,
+    shape(s, 840, y, 376, 92, bg=SURF, bg_alpha=0.025, border=SURF,
           border_alpha=0.08, radius=10)
     text(s, 858, y + 12, 330, 12, h, size=6.2, color=MUTED2, bold=True, spc=1.1)
     text(s, 858, y + 30, 340, 56, d, size=7.2, color=MUTED, line_spacing=1.35)
@@ -1654,7 +1655,7 @@ kpis = [
 for i, (l, v, d) in enumerate(kpis):
     x = 64 + (i % 4) * 292
     y = 222 + (i // 4) * 112
-    shape(s, x, y, 276, 98, bg=WHITE, bg_alpha=0.03, border=WHITE,
+    shape(s, x, y, 276, 98, bg=SURF, bg_alpha=0.03, border=SURF,
           border_alpha=0.09, radius=10)
     text(s, x + 14, y + 12, 240, 12, l, size=6.6, color=MUTED2)
     text(s, x + 14, y + 30, 248, 30, v, size=16, color=TEXT, bold=True, spc=-0.3)
@@ -1667,7 +1668,7 @@ cards = [
 ]
 for i, (h, d) in enumerate(cards):
     x = 64 + i * 390
-    shape(s, x, 456, 372, 90, bg=WHITE, bg_alpha=0.022, border=WHITE,
+    shape(s, x, 456, 372, 90, bg=SURF, bg_alpha=0.022, border=SURF,
           border_alpha=0.08, radius=10)
     text(s, x + 16, 468, 330, 12, h, size=6.2, color=MUTED2, bold=True, spc=1.1)
     text(s, x + 16, 486, 340, 52, d, size=7.4, color=MUTED, line_spacing=1.35)
@@ -1689,7 +1690,7 @@ cad = [
 for i, (tag, t, d, when, tone) in enumerate(cad):
     x = 64 + i * 292
     col = {"red": REDB, "blue": BLUEB, "amber": AMBER, "green": GREEN}[tone]
-    shape(s, x, 226, 276, 200, bg=WHITE, bg_alpha=0.03, border=WHITE,
+    shape(s, x, 226, 276, 200, bg=SURF, bg_alpha=0.03, border=SURF,
           border_alpha=0.09, radius=11)
     pill(s, x + 16, 242, max(54, 12 + len(tag) * 6), 20, tag, color=col,
          border=col, alpha=0.28, size=6.2)
@@ -1718,7 +1719,7 @@ rows = [
     ["Anggaran tidak efisien", ("Sedang", AMBER), "Aturan kill/scale mingguan, frekuensi < 3, biaya per follow jadi KPI utama."],
     ["Ketergantungan satu platform", ("Rendah", BLUEB), "Diversifikasi ke WhatsApp Channel, email, dan situs. Bangun audiens yang bisa dimiliki."],
 ]
-shape(s, 64, 214, 1152, 286, bg=WHITE, bg_alpha=0.02, border=WHITE,
+shape(s, 64, 214, 1152, 286, bg=SURF, bg_alpha=0.02, border=SURF,
       border_alpha=0.09, radius=14)
 table(s, 88, 226, 1104, ["Risiko", "Dampak", "Mitigasi"],
       rows, [330, 130, 644], row_h=42, header_h=28, size=7.8)
@@ -1743,7 +1744,7 @@ gov = [
 ]
 for i, (h, d, foot) in enumerate(gov):
     x = 64 + i * 390
-    shape(s, x, 222, 372, 176, bg=WHITE, bg_alpha=0.03, border=WHITE,
+    shape(s, x, 222, 372, 176, bg=SURF, bg_alpha=0.03, border=SURF,
           border_alpha=0.09, radius=11)
     text(s, x + 16, 238, 330, 12, h, size=6.4, color=MUTED2, bold=True, spc=1.2)
     text(s, x + 16, 258, 340, 80, d, size=7.8, color=MUTED, line_spacing=1.4)
@@ -1757,7 +1758,7 @@ flows = [
 for i, (h, d) in enumerate(flows):
     x = 64 + i * 580
     w = 564 if i == 0 else 572
-    shape(s, x, 414, w, 90, bg=WHITE, bg_alpha=0.022, border=WHITE,
+    shape(s, x, 414, w, 90, bg=SURF, bg_alpha=0.022, border=SURF,
           border_alpha=0.08, radius=10)
     text(s, x + 16, 426, 500, 12, h, size=6.2, color=MUTED2, bold=True, spc=1.1)
     text(s, x + 16, 444, w - 32, 52, d, size=7.6, color=MUTED, line_spacing=1.35)
@@ -1779,7 +1780,7 @@ dec = [
 ]
 y = 214
 for n, t, d in dec:
-    shape(s, 64, y, 600, 58, bg=WHITE, bg_alpha=0.03, border=WHITE,
+    shape(s, 64, y, 600, 58, bg=SURF, bg_alpha=0.03, border=SURF,
           border_alpha=0.09, radius=9)
     shape(s, 78, y + 15, 26, 26, bg=RED, radius=6)
     text(s, 78, y + 21, 26, 12, n, size=7.4, color=WHITE, bold=True, align="c")
@@ -1789,7 +1790,7 @@ for n, t, d in dec:
 
 shape(s, 688, 210, 528, 248, bg=RED, bg_alpha=0.10, border=REDB,
       border_alpha=0.28, radius=12)
-text(s, 706, 226, 400, 12, "TUJUH HARI KE DEPAN", size=6.2, color=RGBColor(0xFF, 0xB3, 0xBA), bold=True, spc=1.2)
+text(s, 706, 226, 400, 12, "TUJUH HARI KE DEPAN", size=6.2, color=RGBColor(0xA5, 0x12, 0x21), bold=True, spc=1.2)
 week = ["Audit keempat akun & tetapkan baseline", "Buat Business Portfolio & ajukan verifikasi",
         "Pasang Pixel, CAPI, dan UTM", "Kunci 5 pilar & template visual",
         "Syuting batch pertama: 30 konten", "Jadwalkan review pertama, Senin"]
@@ -1819,7 +1820,7 @@ header2(s, "Lampiran", [
     [("Standar kecil yang ", {}), ("menjaga konsistensi.", {"color": BLUEB})],
 ])
 
-shape(s, 64, 226, 360, 200, bg=WHITE, bg_alpha=0.03, border=WHITE,
+shape(s, 64, 226, 360, 200, bg=SURF, bg_alpha=0.03, border=SURF,
       border_alpha=0.09, radius=11)
 text(s, 82, 242, 320, 12, "KONVENSI PENAMAAN", size=6.4, color=MUTED2, bold=True, spc=1.2)
 tf = textbox(s, 82, 264, 326, 90)
@@ -1835,7 +1836,7 @@ hline(s, 82, 366, 324, alpha=0.10)
 text(s, 82, 378, 320, 36, "Konsisten = laporan bisa dibaca tanpa bertanya ke pembuatnya.",
      size=6.6, color=MUTED2, line_spacing=1.3)
 
-shape(s, 448, 226, 360, 200, bg=WHITE, bg_alpha=0.03, border=WHITE,
+shape(s, 448, 226, 360, 200, bg=SURF, bg_alpha=0.03, border=SURF,
       border_alpha=0.09, radius=11)
 text(s, 466, 242, 320, 12, "UTM WAJIB", size=6.4, color=MUTED2, bold=True, spc=1.2)
 tf = textbox(s, 466, 264, 326, 90)
@@ -1848,7 +1849,7 @@ hline(s, 466, 366, 324, alpha=0.10)
 text(s, 466, 378, 320, 36, "Setiap link di bio, story, dan iklan memakai UTM yang berbeda.",
      size=6.6, color=MUTED2, line_spacing=1.3)
 
-shape(s, 832, 226, 384, 200, bg=WHITE, bg_alpha=0.03, border=WHITE,
+shape(s, 832, 226, 384, 200, bg=SURF, bg_alpha=0.03, border=SURF,
       border_alpha=0.09, radius=11)
 text(s, 850, 242, 340, 12, "CHECKLIST ASET MINGGUAN", size=6.4, color=MUTED2, bold=True, spc=1.2)
 for i, it in enumerate(["14 konten terjadwal", "3 varian hook per ide", "Subtitle di semua video",
@@ -1864,8 +1865,8 @@ text(s, 64, 472, 800, 54,
      "Dokumen ini adalah rencana kerja, bukan jaminan hasil. Setiap angka perlu diverifikasi terhadap data aktual akun, perilaku audiens, dan kondisi pasar. Semua keputusan anggaran tetap melalui persetujuan pimpinan.",
      size=7.2, color=MUTED2, line_spacing=1.42)
 s.shapes.add_picture(ASSET("uui-logo.png"), IN(936), IN(500), height=IN(26))
-shape(s, 1056, 500, 1, 24, kind=MSO_SHAPE.RECTANGLE, bg=WHITE, bg_alpha=0.18)
-s.shapes.add_picture(ASSET("meta-logo-white.png"), IN(1076), IN(505), height=IN(13))
+shape(s, 1056, 500, 1, 24, kind=MSO_SHAPE.RECTANGLE, bg=SURF, bg_alpha=0.18)
+s.shapes.add_picture(ASSET("meta-logo-dark.png"), IN(1076), IN(505), height=IN(13))
 footer(s, 37)
 
 

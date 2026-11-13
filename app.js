@@ -317,15 +317,15 @@
     [0, 250, 500, 750, 1000].forEach(function (v) {
       const y = yAt(v);
       grid += '<line x1="' + CH.L + '" y1="' + y + '" x2="' + (CH.W - CH.R) + '" y2="' + y +
-        '" stroke="rgba(255,255,255,.08)" stroke-dasharray="' + (v === 0 ? "0" : "3 5") + '"/>';
+        '" stroke="rgba(15,23,42,.10)" stroke-dasharray="' + (v === 0 ? "0" : "3 5") + '"/>';
       const label = v === 1000 ? "1 jt" : v === 0 ? "0" : v + " rb";
-      grid += '<text x="' + (CH.L - 12) + '" y="' + (y + 3.5) + '" text-anchor="end" fill="#6f7b93" font-size="9.5" font-family="inherit">' + label + '</text>';
+      grid += '<text x="' + (CH.L - 12) + '" y="' + (y + 3.5) + '" text-anchor="end" fill="#5f6f88" font-size="9.5" font-family="inherit">' + label + '</text>';
     });
 
     [0, 3, 6, 9, 12, 15, 18].forEach(function (m) {
       const x = xAt(m);
-      grid += '<line x1="' + x + '" y1="' + CH.T + '" x2="' + x + '" y2="' + (CH.H - CH.B) + '" stroke="rgba(255,255,255,.05)"/>';
-      grid += '<text x="' + x + '" y="' + (CH.H - 16) + '" text-anchor="middle" fill="#6f7b93" font-size="9.5" font-family="inherit">' + (m === 0 ? "Mulai" : "Bln " + m) + '</text>';
+      grid += '<line x1="' + x + '" y1="' + CH.T + '" x2="' + x + '" y2="' + (CH.H - CH.B) + '" stroke="rgba(15,23,42,.06)"/>';
+      grid += '<text x="' + x + '" y="' + (CH.H - 16) + '" text-anchor="middle" fill="#5f6f88" font-size="9.5" font-family="inherit">' + (m === 0 ? "Mulai" : "Bln " + m) + '</text>';
     });
 
     const bands = [
@@ -333,33 +333,33 @@
       { x1: xAt(6), x2: xAt(12), label: "AKSELERASI" },
       { x1: xAt(12), x2: xAt(18), label: "SKALA" }
     ].map(function (b) {
-      return '<rect x="' + b.x1 + '" y="' + CH.T + '" width="' + (b.x2 - b.x1) + '" height="' + (CH.H - CH.T - CH.B) + '" fill="rgba(255,255,255,.018)"/>' +
-        '<text x="' + (b.x1 + 10) + '" y="' + (CH.T + 14) + '" fill="rgba(255,255,255,.28)" font-size="8.5" letter-spacing="2" font-family="inherit">' + b.label + '</text>';
+      return '<rect x="' + b.x1 + '" y="' + CH.T + '" width="' + (b.x2 - b.x1) + '" height="' + (CH.H - CH.T - CH.B) + '" fill="rgba(15,23,42,.025)"/>' +
+        '<text x="' + (b.x1 + 10) + '" y="' + (CH.T + 14) + '" fill="rgba(15,23,42,.38)" font-size="8.5" letter-spacing="2" font-family="inherit">' + b.label + '</text>';
     }).join("");
 
     const labels = [[3, "25 rb"], [6, "95 rb"], [9, "220 rb"], [12, "420 rb"], [15, "680 rb"], [18, "1 juta"]];
     let dots = "";
     labels.forEach(function (l) {
       const x = xAt(l[0]), y = yAt(data.filter(function (d) { return d[0] === l[0]; })[0][1]);
-      dots += '<circle cx="' + x + '" cy="' + y + '" r="4.5" fill="#070b14" stroke="#ff5a6a" stroke-width="2"/>';
-      dots += '<text x="' + x + '" y="' + (y - 12) + '" text-anchor="middle" fill="#ffffff" font-size="10.5" font-weight="600" font-family="inherit">' + l[1] + '</text>';
+      dots += '<circle cx="' + x + '" cy="' + y + '" r="4.5" fill="#ffffff" stroke="#c81e2b" stroke-width="2"/>';
+      dots += '<text x="' + x + '" y="' + (y - 12) + '" text-anchor="middle" fill="#0d1526" font-size="10.5" font-weight="600" font-family="inherit">' + l[1] + '</text>';
     });
 
     svg.innerHTML =
       '<defs>' +
         '<linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">' +
-          '<stop offset="0" stop-color="#ff4d5e"/><stop offset="0.55" stop-color="#c04dff"/><stop offset="1" stop-color="#38b6ff"/>' +
+          '<stop offset="0" stop-color="#e0404d"/><stop offset="0.55" stop-color="#8b5cf6"/><stop offset="1" stop-color="#0a6ed1"/>' +
         '</linearGradient>' +
         '<linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">' +
-          '<stop offset="0" stop-color="#ff4d5e" stop-opacity="0.20"/><stop offset="1" stop-color="#ff4d5e" stop-opacity="0"/>' +
+          '<stop offset="0" stop-color="#e0404d" stop-opacity="0.16"/><stop offset="1" stop-color="#e0404d" stop-opacity="0"/>' +
         '</linearGradient>' +
       '</defs>' +
       bands + grid +
       '<path class="area" d="' + area + '" fill="url(#areaGrad)" opacity="0"/>' +
       '<path class="line" d="' + line + '" fill="none" stroke="url(#lineGrad)" stroke-width="3" stroke-linecap="round"/>' +
       dots +
-      '<circle cx="' + xAt(18) + '" cy="' + yAt(1000) + '" r="7" fill="rgba(56,182,255,.18)"/>' +
-      '<text x="' + (xAt(18) - 4) + '" y="' + (yAt(1000) + 26) + '" text-anchor="end" fill="#38b6ff" font-size="9.5" letter-spacing="1.5" font-family="inherit">TARGET 18 BULAN</text>';
+      '<circle cx="' + xAt(18) + '" cy="' + yAt(1000) + '" r="7" fill="rgba(10,110,209,.14)"/>' +
+      '<text x="' + (xAt(18) - 4) + '" y="' + (yAt(1000) + 26) + '" text-anchor="end" fill="#0a63c9" font-size="9.5" letter-spacing="1.5" font-family="inherit">TARGET 18 BULAN</text>';
 
     const lineEl = svg.querySelector(".line");
     const areaEl = svg.querySelector(".area");

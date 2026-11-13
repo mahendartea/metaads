@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html><head><meta charset="utf-8"><style>
-  html,body{margin:0;width:1280px;height:720px;overflow:hidden;background:#05070d}
+  html,body{margin:0;width:1280px;height:720px;overflow:hidden;background:#f7f9fc}
   .bg{position:absolute;inset:0;
     background:
-      radial-gradient(900px 520px at 100% -10%, rgba(10,124,255,.15), transparent 62%),
-      radial-gradient(760px 480px at -8% 108%, rgba(206,32,32,.17), transparent 60%),
-      linear-gradient(180deg,#070b14 0%,#05070d 100%);
+      radial-gradient(900px 520px at 100% -10%, rgba(10,110,209,.09), transparent 62%),
+      radial-gradient(760px 480px at -8% 108%, rgba(200,30,43,.08), transparent 60%),
+      linear-gradient(180deg,#ffffff 0%,#f5f7fb 100%);
   }
   .bg::before{content:"";position:absolute;inset:0;
-    background-image:linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px);
+    background-image:linear-gradient(rgba(15,23,42,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(15,23,42,.035) 1px,transparent 1px);
     background-size:64px 64px;
     -webkit-mask-image:radial-gradient(ellipse at 50% 40%,#000 30%,transparent 78%);
     mask-image:radial-gradient(ellipse at 50% 40%,#000 30%,transparent 78%);
   }
   .bg::after{content:"";position:absolute;top:0;left:64px;right:64px;height:1px;
-    background:linear-gradient(90deg,transparent,rgba(255,255,255,.16),transparent)}
+    background:linear-gradient(90deg,transparent,rgba(15,23,42,.14),transparent)}
   body.cover .bg{
     background:
-      radial-gradient(1000px 700px at 78% 8%, rgba(10,124,255,.22), transparent 58%),
-      radial-gradient(900px 700px at 4% 96%, rgba(206,32,32,.26), transparent 58%),
-      #05070d;
+      radial-gradient(1000px 700px at 78% 8%, rgba(10,110,209,.12), transparent 58%),
+      radial-gradient(900px 700px at 4% 96%, rgba(200,30,43,.12), transparent 58%),
+      #f7f9fc;
   }
   body.divider .bg{
     background:
-      radial-gradient(800px 600px at 82% 20%, rgba(10,124,255,.16), transparent 60%),
-      radial-gradient(900px 700px at 12% 88%, rgba(206,32,32,.20), transparent 58%),
-      #06080f;
+      radial-gradient(800px 600px at 82% 20%, rgba(10,110,209,.10), transparent 60%),
+      radial-gradient(900px 700px at 12% 88%, rgba(200,30,43,.12), transparent 58%),
+      #f8fafc;
   }
 </style></head><body>
 <div class="bg"></div>

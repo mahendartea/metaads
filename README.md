@@ -126,8 +126,10 @@ metaads/
 ├── app.js                        # navigasi, catatan, kalkulator, grafik
 ├── assets/
 │   ├── uui-logo.png              # logo UUI (transparan)
-│   ├── meta-logo-white.png       # logo Meta putih (untuk PPTX)
-│   ├── meta-logo-white.svg       # logo Meta putih (untuk web)
+│   ├── meta-logo-white.png       # logo Meta putih (untuk PPTX lama)
+│   ├── meta-logo-white.svg       # logo Meta putih
+│   ├── meta-logo-dark.png        # logo Meta gelap (tema light, PPTX)
+│   ├── meta-logo-dark.svg        # logo Meta gelap (tema light, web)
 │   ├── 2021_Facebook_icon.png    # ikon platform untuk PPTX
 │   ├── Instagram_logo_2016.png
 │   └── WhatsApp.png
@@ -151,7 +153,7 @@ metaads/
 
 - **Teks slide** ada di `index.html`, satu `<section class="slide">` per halaman.
 - **Warna** ada di blok `:root` pada `styles.css`
-  (`--red: #ce2020` sesuai logo UUI, `--blue: #0a7cff` untuk Meta).
+  (tema light; `--red: #c81e2b` sesuai logo UUI, `--blue: #0a6ed1` untuk Meta).
 - **Angka target** di slide 23 dihitung otomatis; angka statis (1.000.000,
   987.600, 1.805/hari) perlu disesuaikan manual bila baseline berubah.
 - **Catatan pembicara** ada di array `SPEAKER` pada `app.js`.
